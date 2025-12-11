@@ -1,21 +1,15 @@
 @use '_var' as *;
 /*
-section.inner-promo(
-  style="background-image: image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);
-         -webkit-background-image: -webkit-image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);"
-)
- @media (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
+	section.inner-promo(
+	style="background-image: image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);
+			-webkit-background-image: -webkit-image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);"
+	)
+	@media (-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
 
-    .box{background:url('images/box-bg@2x.png') no-repeat top left;}
-}
- */
-// @font-face {
-//     font-family: 'Roboto';
-//     src: url('../fonts/Roboto-Regular.woff2') format('woff2');
-//     font-weight: 400;
-//     font-style: normal;
-// }
+		.box{background:url('images/box-bg@2x.png') no-repeat top left;}
+	}
+*/
 
 
 *, *:after, *:before {
@@ -25,8 +19,21 @@ section.inner-promo(
 	
 }
 :root {
-	
-	
+	--accent1: #00adbb;
+	--accent2: #008a95;
+	--accent3: #00666e;
+	--error: #bb0e00;
+	--white: #fff;
+	--black: #000;
+	--primary: #2e2f31;
+	--primary1: #54565a;
+	--secondary: #8b8c8f;
+	--secondary1: #b5b6b8;
+	--secondary2: #e2e3e3;
+	--secondary3: #f8f8f9;
+	--secondary4: rgba(248, 248, 249, 0.7);
+
+	--font-family: "Roboto";
 }
 html {
 	scroll-behavior: smooth;
@@ -36,8 +43,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	
-	
+	font-family: var(--font-family), sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;

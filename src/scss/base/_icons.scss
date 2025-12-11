@@ -1,7 +1,49 @@
-svg{display: inline-block;}
+svg{display: inline-block; color: var(--accent1);}
+.svg-cross{
+   width: 26px;
+   height: 26px;
+}
 .svg-right{
-	
 	width: 12px;
 	height: 10px;
-	color: blue;
+}
+.svg-arrLeft{
+	width: 20px;
+	height: 14px;
+}
+.svg-phone{
+	width: 19px;
+	height: 18px;
+}
+.svg-email{
+	width: 18px;
+	height: 11px;
+}
+.svg-search{
+	width: 22px;
+	height: 20px;
+}
+.svg-play{
+	width: 65px;
+	height: 72px;
+}
+.svg-carret-down{
+	width: 12px;
+	height: 7px;
+}
+.svg-check{
+	width: 18px;
+	height: 14px;
+}
+.svg-downl{
+	width: 20px;
+	height: 21px;
+}
+.svg-pdf{
+	width: 16px;
+	height: 17px;
+}
+.svg-carret-left, .svg-carret-right{
+	width: 20px;
+	height: 20px;
 }

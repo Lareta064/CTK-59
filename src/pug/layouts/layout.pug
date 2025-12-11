@@ -1,0 +1,58 @@
+include _mixins-links.pug
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		//=======убрать перевод цифр в номер телефона на ios  и safari ======
+		meta(name="format-detection" content="telephone=no")
+		
+		//Swiper
+		link(rel="stylesheet"  href="./libs/swiper/swiper.min.css")
+		//========= fancybox ========
+		//- link(rel="stylesheet"  href="./libs/fancybox/fancybox.css")
+		//========= custom styles ========
+		link(rel="stylesheet"  href="./css/main.css")
+		title !{title}
+		style.
+			@font-face {
+				font-family: 'Roboto';
+				src: url('./fonts/RobotoRegular.woff2') format('woff2');
+				font-weight: 400;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'Roboto';
+				src: url('./fonts/RobotoMedium.woff2') format('woff2');
+				font-weight: 500;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'Roboto';
+				src: url('./fonts/RobotoBold.woff2') format('woff2');
+				font-weight: 700;
+				font-style: normal;
+			}
+			!{customStyle}
+	
+	body(class=(bodyCl !=="" ? bodyCl : ''))
+		
+
+		
+		block content
+		
+		
+		
+		//Swiper
+		script(src="./libs/swiper/swiper.js")
+		//fancybox
+		//- script(src="./libs/fancybox/fancybox.umd.js")
+		
+		
+		script(src="./js/main.js")
+	
+	

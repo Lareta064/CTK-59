@@ -56,4 +56,9 @@
 	color: var(--primary1);
 	
 }
-.xs-100{width: 100%!important;}
+.xs-100{
+	@media (max-width: 767px) {
+		width: 100%!important;
+	}
+
+}

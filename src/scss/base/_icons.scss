@@ -1,4 +1,10 @@
 svg{display: inline-block; color: var(--accent1);}
+.svg-logo{
+	width: 112px;
+	aspect-ratio: 112/108;
+	transition: .3s; 
+	&:hover{opacity: .6;}
+}
 .svg-cross{
    width: 26px;
    height: 26px;

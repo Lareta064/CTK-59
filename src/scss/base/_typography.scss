@@ -17,7 +17,8 @@
 .fs-18{font-size: 20px;}
 .fs-16{font-size: 18px;}
 .fs-14{font-size: 14px;}
-
+.fw-500{font-weight: 500;}
+.fw-700{font-weight: 700;}
 .link, .link-primary{
 	position: relative;
 	display: inline;
@@ -46,5 +47,13 @@
 .link-primary{	
 	color: var(--accent2);
 	&:hover{color: var(--secondary);}
-	
 }
+.flex-txt,
+.phone-link{
+	display: inline-flex;
+	align-items: center;
+	column-gap:10px;
+	line-height: 1;
+	transition: .3s; 
+}
+.phone-link:hover{color: var(--accent3);}

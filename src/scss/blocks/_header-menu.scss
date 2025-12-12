@@ -1,0 +1,73 @@
+.navbar-nav{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		// flex:1;
+		align-items: center;
+		column-gap:40px;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		
+	.sub-menu-wrapper {
+		position: fixed; 
+		display: flex;
+		align-items: center;  
+		left: 0;
+		width: 100vw;       
+		overflow: hidden;
+		height: 0;
+		transition: height .2s;
+		z-index: 9; 
+		background: var(--secondary4);   
+	}
+	.sub-menu {
+		padding: 20px 0;
+		margin: 0;
+		list-style-type: none;
+		z-index: 2;
+	
+		white-space: nowrap;
+		width: 100%; 
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		flex-wrap: wrap;
+  }
+	
+	.menu-link{
+		display: block;
+		line-height: 1.40;
+		white-space: nowrap;
+       color: var(--primary);
+	}
+	.menu-item-has-submenu .menu-link{
+		position: relative;
+		display: flex;
+		column-gap: 6px;
+		align-items: center;
+		&:after{
+			content: '';
+			width: 18px;
+			height: 18px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.44804 6.01936C3.67399 5.79342 4.04032 5.79342 4.26626 6.01936L9.00001 10.7531L13.7338 6.01936C13.9597 5.79342 14.326 5.79342 14.552 6.01936C14.7779 6.24531 14.7779 6.61164 14.552 6.83759L9.40912 11.9804C9.18318 12.2064 8.81684 12.2064 8.5909 11.9804L3.44804 6.83759C3.2221 6.61164 3.2221 6.24531 3.44804 6.01936Z' fill='%232E2F31' /%3e%3c/svg%3e");
+			background-size: 18px 18px;
+			transition: .3s; 
+		}
+	}
+	.menu-item-has-submenu .menu-link:hover, .sub-menu-link:hover{
+		color: var(--accent3) ;
+		&:after{
+			content: '';
+			width: 18px;
+			height: 18px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.44804 6.01936C3.67399 5.79342 4.04032 5.79342 4.26626 6.01936L9.00001 10.7531L13.7338 6.01936C13.9597 5.79342 14.326 5.79342 14.552 6.01936C14.7779 6.24531 14.7779 6.61164 14.552 6.83759L9.40912 11.9804C9.18318 12.2064 8.81684 12.2064 8.5909 11.9804L3.44804 6.83759C3.2221 6.61164 3.2221 6.24531 3.44804 6.01936Z' fill='%2300666e' /%3e%3c/svg%3e");
+			transform: rotate(180deg);
+		}
+	}
+	.menu-item:hover .sub-menu-wrapper{
+		height: 92px;
+	}
+
+}

@@ -1,10 +1,53 @@
-header.header-mobile
+header.header
 	.container
-		//- a.logo(href="index.html")
-		//- 	img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='44'  alt='logo')
+		.custom-logo-link
+			a.custom-logo(href="index.html")
+				svg.svg-logo
+					use(href='./img/logo.svg#svg-logo')
 
-		//menu-toggle
-		button.menu-toggle#menu-toggle
-			span
-	
-
+		
+		.header-container
+			ul.navbar-nav
+				li.menu-item.menu-item-has-submenu
+					a.menu-link(href="projects.html") Проекты
+					.sub-menu-wrapper
+						ul.sub-menu
+							li.sub-menu-item
+								a.sub-menu-link(href="single-project.html") Все проекты
+							li.sub-menu-item
+								a.sub-menu-link(href="single-project.html") Введеные в эксплуатацию
+							li.sub-menu-item
+								a.sub-menu-link(href="single-project.html") Строящиеся
+							li.sub-menu-item
+								a.sub-menu-link(href="single-project.html") Планируется
+				
+				
+				
+				li.menu-item.menu-item-has-submenu
+					a.menu-link(href="service.html") Выбор квартиры
+					.sub-menu-wrapper
+						ul.sub-menu
+							li.sub-menu-item
+								a.sub-menu-link(href="") Студия
+							li.sub-menu-item
+								a.sub-menu-link(href="") 1-комн. квартиры
+							li.sub-menu-item
+								a.sub-menu-link(href="") 2-комн. квартиры
+							li.sub-menu-item
+								a.sub-menu-link(href="") 3-комн. квартиры
+							li.sub-menu-item
+								a.sub-menu-link(href="") 4-комн. квартиры
+				li.menu-item
+					a.menu-link(href="#!") Способы покупки
+				li.menu-item
+					a.menu-link(href="about.html") О компании
+				li.menu-item
+					a.menu-link(href="contacts.html") Контакты
+					
+			
+			
+			.header-group
+				a(href="tel:+78672995959").phone-link.fs-20.fw-700
+					img(src='./img/whatsapp.webp' width='28' height='28'  alt='icon')
+					span +7 8672 99 59 59
+				button.btn-primary(type="buttom") Заказать звонок

@@ -1,5 +1,5 @@
 .btn-primary,
-.btn-dark, .btn-light, .btn-outline{
+.btn-dark, .btn-light, .btn-outline,.btn-opacity{
 
 	display: inline-flex;
 	justify-content: center;
@@ -35,7 +35,11 @@
 .btn-primary,.btn-dark{
   color: var(--white);
 }
+.btn-opacity{
+	background-color: transparent;
+	border:1px solid  currentColor;
 
+}
 
 .btn-primary{
 	background: var(--accent1);

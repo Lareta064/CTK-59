@@ -9,6 +9,8 @@
 	font-size: 16px;
 	color: var(--white);
 	white-space: nowrap;
+	&.tag--dark{background: var(--primary);}
+	
 }
 .tags-block{
 	flex-wrap: wrap;

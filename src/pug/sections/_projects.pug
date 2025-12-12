@@ -1,0 +1,47 @@
+//PROJECTS
+section.projects
+	.container
+		.section-header.d-flex
+			h2.h2 Проекты
+			a.btn-outline(href="all-projects.html")
+				svg.svg-pin
+					use(href='./img/sprite.svg#svg-pin')
+				span На карте
+		.projects-content
+			.project-card(style="background-image:url(./img/project1.webp)")
+				
+				.tags-block.d-flex
+					.tag #new tag
+					.tag #new tag
+					.tag #new tag
+				
+				.project-card__content
+					.project-card__title.d-flex
+						.fs-24 ЖК «Весна»
+						.fs-20 от 70 000 ₽ за м2
+					.project-card__tags
+						.tag.tag--dark 120 квартир
+					.project-card__address
+						p г. Владикавказ, ул. Весенняя 
+
+					nav.project-card__list
+						a.project-card__link(href="#!")
+							.fs-16 Студии
+							.fs-20 от 2.1 млн ₽
+						a.project-card__link(href="#!")
+							.fs-16 1-комнатные
+							.fs-20 от 3.0 млн ₽
+						a.project-card__link(href="#!")
+							.fs-16 2-комнатные
+							.fs-20 от 4.6 млн ₽
+						a.project-card__link(href="#!")
+							.fs-16 3-комнатные
+							.fs-20 от 5.5 млн ₽
+						a.project-card__link(href="#!")
+							.fs-16 4-комнатные
+							.fs-20 от 7.2 млн ₽
+					
+					.project-card__btns.d-flex
+						a.btn-opacity(href="#!") Выбрать квартиру
+						a.btn-dark(href="#!") О проекте
+

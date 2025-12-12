@@ -1,0 +1,69 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Карточка предложения
+				.container-dashboard__content
+					.offer-card.br-40(style="width:1017px")
+						.offer-card__img
+							img.img-cover(src='../img/banner.webp', srcset='../img/banner@2x.webp 2x' width='1017' height='700'  alt='img')
+						
+						.offer-card__content
+							.offer-card__header
+								.tags-block.d-flex
+									.tag # new tag
+									.tag # new tag
+									.tag # new tag
+								.offer-card__title
+									.h1 Эко-квартал Алания
+									.fs-24 ЖК «Весна»
+							
+							.offer-card__footer
+								.btns-group.d-flex
+									a.btn-light(href="#!") Выбрать квартиру
+									button.btn-primary(href="#!") Заказать консультацию
+								
+								.fs-16.flex-txt 
+									span Рассчитать
+									svg.svg-right
+										use(href='../img/sprite.svg#svg-right')
+
+					
+					.offer-card.br-40(style="width:493px")
+						.offer-card__img
+							img.img-cover(src='../img/news.webp', srcset='../img/news@2x.webp 2x' width='493' height='395'  alt='img')
+						
+						.offer-card__content
+							.offer-card__header
+								.fs-24 ЖК «Весна»
+							
+							.offer-card__footer
+								a(href="#!").fs-16.flex-txt.hover-opac
+									span Рассчитать
+									svg.svg-right
+										use(href='../img/sprite.svg#svg-right')
+					br
+					.offer-card.br-40.offer-card--center(style="width:493px")
+						.offer-card__img
+							img.img-cover(src='../img/news.webp', srcset='../img/news@2x.webp 2x' width='493' height='395'  alt='img')
+						
+						.offer-card__content
+							.fs-24 Онлайн камера строительства
+							

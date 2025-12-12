@@ -80,7 +80,7 @@
 	line-height: 1;
 	transition: .3s; 
 }
-.phone-link:hover{color: var(--accent3);}
+.phone-link:hover,.hover-accent:hover{color: var(--accent3);}
 .hover-opac:hover{opacity: .7;}
 .bg-dark{
 	color: white;
@@ -88,7 +88,7 @@
 }
 .section-header.d-flex{
   justify-content: space-between;
-  margin-bottom: 40px;
+ 
   @media (max-width: 424px) {
 	flex-wrap: wrap;
 	gap:20px;

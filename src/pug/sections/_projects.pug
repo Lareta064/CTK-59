@@ -35,7 +35,7 @@ mixin project-card
 
 //PROJECTS
 section.projects
-	.container
+	.container.gap-40
 		.section-header.d-flex
 			h2.h2 Проекты
 			a.btn-outline(href="all-projects.html")
@@ -56,3 +56,6 @@ section.projects
 			//single card
 			.project-card(style="background-image: image-set(url('./img/project4.webp') 1x, url('./img/project4@2x.webp') 2x)")
 				+project-card
+		
+		.btn-center
+			button.btn-outline(type="button") Загрузить еще

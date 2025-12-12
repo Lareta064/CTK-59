@@ -161,6 +161,23 @@ input::placeholder, textarea::placeholder{
 	   padding-right: 20px;
 	}
 }
+.container-large{
+	width: 100vw;
+	max-width: 1540px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	@media (max-width: 767px) {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+}
+.container.gap-40{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap:40px;
+}
 .main-page{
 	padding-top: 40px;
 	display: flex;
@@ -211,7 +228,7 @@ input::placeholder, textarea::placeholder{
 	 --gap: 20px;
 	}
 	@media (max-width: 767px) {
-		grid-template-columns: 1fr!important;
+		grid-template-columns: 1fr;
 	}
 }
 .grid-column{
@@ -232,11 +249,17 @@ input::placeholder, textarea::placeholder{
 
 	}
 	@media (max-width: 767px) {
-		.grid-column-right{gap: 40px;}
+		.grid-column-right{
+			gap: 40px;
+			grid-template-columns: 1fr;
+		}
 	}
 }
 .grid-two-columns{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap:30px;
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
 }

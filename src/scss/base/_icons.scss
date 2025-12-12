@@ -22,8 +22,9 @@ svg{display: inline-block; color: var(--accent1);}
 	height: 18px;
 }
 .svg-email{
-	width: 18px;
-	height: 11px;
+	width: 19px;
+	height: 16px;
+	color: var(--primary);
 }
 .svg-search{
 	width: 22px;
@@ -58,3 +59,9 @@ svg{display: inline-block; color: var(--accent1);}
 	height: 22px;
 	color:#2E2F31;
 }
+.svg-whatsapp{
+	width: 24px;
+	height: 24px;
+	color: #212121;
+}
+.svg-white{color:white; }

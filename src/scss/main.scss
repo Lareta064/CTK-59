@@ -14,6 +14,8 @@
 @use "sections/_projects";
 @use "sections/_benefits";
 
+@use "sections/_footer";
+
 // @use "base/_test";
 // @import "base/_grids";
 // @import "base/_typography";
@@ -25,8 +27,6 @@
 
 // @import "blocks/_marker-list";
 // @import "blocks/_tabs";
-
-
 
 // ui
 @use "ui/_ui-navigation";

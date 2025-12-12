@@ -1,0 +1,111 @@
+/* FOOTER*/
+.footer{
+	background: var(--secondary3);
+	padding-top: 60px;
+	padding-bottom: 40px;
+	&-top, &-center, &-bottom{
+		display: flex;
+		align-items: center;
+		column-gap: 2vw;
+	}
+    .container-large{
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap:60px;
+		@media (max-width: 1364px) {
+		  row-gap:50px;
+		}
+		@media (max-width: 1199px) {
+		  row-gap:40px;
+		}
+	}
+	.custom-logo-link, .footer-group{flex-shrink: 0;}
+	.footer-nav{
+		column-gap:  2vw;
+		flex:1;
+		justify-content: center;
+		a{
+			color: var(--primary);
+			transition: .3s;
+			line-height: 1.4;
+			&:hover{color: var(--accent3);}
+		}
+	}
+	&-center{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 2vw;
+		@media (max-width: 1699px) {
+		  grid-template-columns: 1fr 1fr 1.5fr;
+		}
+		@media (max-width: 1279px) {
+		 grid-template-columns: 1fr 1fr;
+		 gap:20px;
+		}
+		@media (max-width: 1023px) {
+		 display: flex;
+		 flex-wrap: wrap;
+		 gap:20px;
+		}
+	}
+	&-bottom{
+		padding-top: 30px;
+		border-top:1px solid var(--secondary2);
+		justify-content: space-between;
+		column-gap: 2vw;
+	}
+	.footer-legal{
+		flex:1;
+		column-gap: 2vw;
+		justify-content: space-between;
+	}
+	ul, ol{
+		margin: 0;
+		padding: 0;
+		list-style-type:none;
+	}
+	@media (max-width: 1364px) {
+		.footer-top{
+			flex-wrap: wrap;
+			row-gap:30px;
+			.footer-nav{
+				min-width: 100%;
+				flex-shrink:0;
+				order:10;
+				gap:40px;
+				// justify-content: space-between;
+			}
+			.custom-logo-link{margin-right: auto;}
+		}
+		
+	  .footer-bottom{
+		flex-wrap: wrap;
+		gap:30px;
+		.footer-legal{
+			min-width: 100%;
+		}
+
+	  }
+	}
+	@media (max-width: 991px) {
+	 .footer-top .footer-nav{
+		flex-direction: column;
+		gap:20px;
+		align-items: flex-start;
+	 }
+	 .footer-bottom .footer-legal{
+		flex-direction: column;
+		gap:20px;
+		align-items: flex-start;
+	 }
+	}
+}
+.contact-item{
+	line-height: 1.4;
+	color: var(--primary1);
+	&>*+*{margin-top: 2px;}
+	@media (max-width: 991px) {
+		.fs-20{font-size: 16px;}
+		.fs-20.fw-500{font-size: 18px;}
+	}
+}

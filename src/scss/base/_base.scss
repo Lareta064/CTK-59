@@ -232,3 +232,11 @@ input::placeholder, textarea::placeholder{
 		}
 	}
 }
+.grid-two-columns{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:30px;
+	@media (max-width: 1439px) {
+	 gap: 20px;
+	}
+}

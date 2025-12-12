@@ -127,9 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
           closeAllMobileSubmenus();
         }
       });
-
-
-
     
     //swipers
     let promoSwiper = new Swiper('.promo-swiper',{
@@ -140,10 +137,10 @@ document.addEventListener('DOMContentLoaded', function () {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      //  autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
     });
 
     /**HEADER MENU MOBILE */

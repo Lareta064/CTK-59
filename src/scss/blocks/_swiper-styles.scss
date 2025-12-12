@@ -1,3 +1,23 @@
-.swiper-button-next{
-	
+.swiper-button-next,
+.swiper-button-prev{
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	transition: .3s; 
+	background: var(--secondary44);
+	&:after{
+		font-size: 22px;
+		color: var(--accent3);
+	}
+	&:hover{
+		background: var(--accent1);
+		&:after{color: white;}
+	}
+}
+.swiper-nav.d-flex{
+	position: relative;
 }

@@ -4,6 +4,11 @@
 	padding-top: 15px;
 	height: 115px;
 	z-index: 10;
+	background-color: #fff;
+	@media (max-width: 767px) {
+	height: 97px;
+	padding-top: 10px;
+	}
 	.container{
 		display: flex;
 		align-items: center;
@@ -17,7 +22,9 @@
 		min-width: 80px;
 		width: 7vw;
 		flex-shrink: 0;
-		svg{width: 100%;
+		svg{width: 100%;}
+		@media (max-width: 767px) {
+		width: 80px;
 		}
 	}
 	.header-container{

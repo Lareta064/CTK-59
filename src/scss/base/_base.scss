@@ -49,7 +49,7 @@
 	--secondary1: #b5b6b8;
 	--secondary2: #e2e3e3;
 	--secondary3: #f8f8f9;
-	// --secondary4: rgba(248, 248, 249, 0.7);
+	--secondary44: rgba(248, 248, 249, 0.7);
 	--secondary4: rgba(250, 250, 251, 1);
 
 	--font-family: "Roboto";
@@ -167,6 +167,14 @@ input::placeholder, textarea::placeholder{
 	flex-direction: column;
 	row-gap:180px;
 	&>*{width: 100%;}
+	@media (max-width: 1919px) {
+	  padding-top: 2vw;
+	  row-gap:9vw;
+	}
+	@media (max-width: 1279px) {
+	 padding-top: 40px;
+	 row-gap:100vw;
+	}
 }
 /*vendore*/
 .br-40{
@@ -197,11 +205,30 @@ input::placeholder, textarea::placeholder{
 }
 
 .grid-column{
+	--gap: 30px;
 	display: grid;
-	gap:30px;
+	gap:var(--gap);
 	grid-template-columns: 1017px 1fr;
 	.promo-swiper{width:100% ;}
 	@media (max-width: 1919px) {
 	  grid-template-columns: 68% 1fr;
+	}
+	@media (max-width: 1439px) {
+	 --gap: 20px;
+	}
+	@media (max-width: 1023px) {
+	  display: block;
+	  .grid-column-right{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:20px;
+	  }
+
+	}
+	@media (max-width: 767px) {
+		.grid-column-right{
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
 	}
 }

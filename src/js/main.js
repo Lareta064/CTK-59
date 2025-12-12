@@ -37,9 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
       function closeAllMobileSubmenus() {
+        document.querySelectorAll('.menu-item-has-submenu').forEach(item => {
+          item.classList.remove('menu-item-has-submenu--open');
+        });
+
         document.querySelectorAll('.sub-menu-wrapper').forEach(wrapper => {
           wrapper.classList.remove('is-open');
-          wrapper.style.height = ''; // вместо '0px'
+          wrapper.style.height = ''; // очищаем inline-height, десктопу это важно
         });
       }
       /* === Мобилка: аккордеон для подменю === */
@@ -75,15 +79,22 @@ document.addEventListener('DOMContentLoaded', function () {
         wrapper.style.height = '0px';
       }
 
-      function toggleSubmenu(wrapper) {
+      function toggleSubmenu(item, wrapper) {
         const vw = document.documentElement.clientWidth;
         if (vw >= BREAKPOINT) return; // на десктопе управляем hover'ом
 
         const isOpen = wrapper.classList.contains('is-open');
+
         if (isOpen) {
+          // закрываем только этот
           closeSubmenu(wrapper);
+          item.classList.remove('menu-item-has-submenu--open');
         } else {
+          // сначала закрываем остальные
+          closeAllMobileSubmenus();
+          // открываем текущий
           openSubmenu(wrapper);
+          item.classList.add('menu-item-has-submenu--open');
         }
       }
 
@@ -109,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const wrapper = item.querySelector('.sub-menu-wrapper');
             if (!wrapper) return;
 
-            toggleSubmenu(wrapper);
+            toggleSubmenu(item, wrapper); // ← передаём item
           });
         });
       }

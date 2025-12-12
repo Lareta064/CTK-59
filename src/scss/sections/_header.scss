@@ -47,6 +47,7 @@
 			transform: translateX(110%);
 			transition: .3s;
 			 border-top: 1px solid var(--secondary2);
+			
 			&.active{transform: translateX(0);}
 
 		}
@@ -60,6 +61,9 @@
 		   max-width: 430px;
 		   background-color: #fff;
 		   flex-direction: column;
+		   justify-content: space-between;
+		   row-gap: 20px;
+		    padding-bottom: 50px;
 		   
 		}
 	}
@@ -67,10 +71,22 @@
 		flex-shrink: 0;
 		display: flex;
 		column-gap:20px;
+		@media (max-width: 1279px) {
+		 flex-direction: column;
+		 align-items: center;
+		 row-gap:20px;
+		 text-align: center;
+		 width: 100%;
+		 padding-left: 20px;
+		 padding-right: 20px;
+		}
 	}
 	.phone-link{
 		@media (max-width: 1439px) {
 			img{display: none;}
+		}
+		@media (max-width: 1279px) {
+		   img{display:block;}
 		}
 	}
 	@media (max-width: 1919px) {

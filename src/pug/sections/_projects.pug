@@ -9,7 +9,7 @@ mixin project-card
 			.fs-20 от 70 000 ₽ за м2
 		.project-card__tags
 			.tag.tag--dark 120 квартир
-		.project-card__address
+		.project-card__address.fs-16
 			p г. Владикавказ, ул. Весенняя 
 
 		nav.project-card__list
@@ -45,14 +45,14 @@ section.projects
 		
 		.projects-content.grid-two-columns
 			//single card
-			.project-card(style="background-image:url(./img/project1.webp)")
+			.project-card(style="background-image: image-set(url('./img/project1.webp') 1x, url('./img/project1@2x.webp') 2x)")
 				+project-card
 			//single card
-			.project-card(style="background-image:url(./img/project2.webp)")
+			.project-card(style="background-image: image-set(url('./img/project2.webp') 1x, url('./img/project2@2x.webp') 2x)")
 				+project-card
 			//single card
-			.project-card(style="background-image:url(./img/project3.webp)")
+			.project-card(style="background-image: image-set(url('./img/project3.webp') 1x, url('./img/project3@2x.webp') 2x)")
 				+project-card
 			//single card
-			.project-card(style="background-image:url(./img/project4.webp)")
+			.project-card(style="background-image: image-set(url('./img/project4.webp') 1x, url('./img/project4@2x.webp') 2x)")
 				+project-card

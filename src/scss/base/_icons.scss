@@ -60,14 +60,15 @@ svg{display: inline-block; color: var(--accent1);}
 	color:#2E2F31;
 }
 .svg-doc{
-	width: 22px;
-	height: 22px;
 	color:white;
 }
-.svg-screen{
+.svg-screen, .svg-link-shear{
 	width: 28px;
 	height: 28px;
 	color:#00ADBB;
+}
+.svg-link-shear{
+	color: #00ADBB;
 }
 .svg-whatsapp{
 	width: 24px;

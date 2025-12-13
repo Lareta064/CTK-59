@@ -283,3 +283,9 @@ input::placeholder, textarea::placeholder{
 	  &__wide{width: 100%;}
 	}
 }
+.mb-40{
+	margin-bottom: 40px;
+	@media (max-width: 1023px) {
+	margin-bottom: 20px;
+	}
+}

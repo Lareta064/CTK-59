@@ -7,13 +7,37 @@
 			left: 30px;
 			z-index: 2;
 			color: white;
+			@media (max-width: 1364px) {
+			top: 20px;
+			left: 20px;
+			}
 		}
 	}
+	
 }
 .project-tour-swiper{
 	.offer-card__header, .offer-card__footer{
 		display: flex;
 		justify-content: flex-end;
+	}
+	
+	@media(min-width: 768px){
+		.promo-swiper-prev{
+			top: auto;
+			left:30px;
+			bottom: 30px;
+			transform: translateY(0);
+		}
+		.promo-swiper-next{
+			top: auto;
+			right: auto;
+			left:102px;
+			bottom: 30px;
+			transform: translateY(0);
+		}
+	}
+	@media (max-width: 767px) {
+	.offer-card__footer{justify-content: center;}
 	}
 }
 .fancybox__content img{

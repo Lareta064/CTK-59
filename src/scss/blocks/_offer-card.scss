@@ -3,6 +3,7 @@
 	overflow:hidden;
 	aspect-ratio: 493/335;
 	max-width: 1540px;
+	border-radius: 40px;
 	&__content{
 		position: absolute;
 		inset:0;
@@ -35,6 +36,9 @@
 		&>*+*{margin-top: 10px;}
 	}
 	.svg-right{color: white;}
+	@media (max-width: 1023px) {
+	border-radius: 20px;
+	}
 	@media (max-width: 767px) {
 	aspect-ratio: 390/280;
 	}

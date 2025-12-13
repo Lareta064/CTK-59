@@ -1,0 +1,50 @@
+//BUILDING
+section.building
+	.section
+		.tabs-slider(data-tabs)
+			.tabs-nav
+				button.tabs-nav-btn(type="button" data-tbtn="1") Все объекты
+				button.tabs-nav-btn(type="button" data-tbtn="2") 1 очередь
+				button.tabs-nav-btn(type="button" data-tbtn="3") 2 очередь
+
+
+			.tabs-content-wrapper
+				//content for Все объекты
+				.tabs-content(data-tcontent="1")
+					//slider nav
+					button.tab-swiper-prev.swiper-button-prev(type="button")
+					button.tab-swiper-next.swiper-button-next(type="button")
+					//slider
+					.swiper.tab-swiper
+						.swiper-wrapper
+							.swiper-slide
+								.offer-card.offer-card--center
+									
+							.swiper-slide
+								h1 BBB
+				//content for 1 очередь	
+				.tabs-content(data-tcontent="2" hidden)
+					//slider nav
+					button.tab-swiper-prev.swiper-button-prev(type="button")
+					button.tab-swiper-next.swiper-button-next(type="button")
+					//slider
+					.swiper.tab-swiper
+						.swiper-wrapper
+							.swiper-slide
+								h1 CCC
+							.swiper-slide
+								h1 DDD
+				//content for 2 очередь	
+				.tabs-content(data-tcontent="3" hidden)
+					//slider nav
+					button.tab-swiper-prev.swiper-button-prev(type="button")
+					button.tab-swiper-next.swiper-button-next(type="button")
+					//slider
+					.swiper.tab-swiper
+						.swiper-wrapper
+							.swiper-slide
+								h1 CCC
+							.swiper-slide
+								h1 DDD
+
+

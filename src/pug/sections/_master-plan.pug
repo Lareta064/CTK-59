@@ -1,0 +1,19 @@
+section.master-plan
+	.container
+		.master-plan-content.grid-two-columns
+			.master-plan-link
+				.h2.mb-40 Генплан
+				.master-plan-gallery
+					a(href="#!").btn-round
+						svg.svg-screen
+							use(href='./img/sprite.svg#svg-screen')
+					picture
+						source(srcset="./img/general-w480.webp 1x, ./img/general-w480@2x.webp 2x" media="(max-width:767px)" type="image/webp")
+						img.img-cover.br-40(src='./img/general.webp', srcset='./img/general@2x.webp 2x' width='755' height='590' loading='lazy' alt='img')
+			
+			.master-plan-map
+				.h2.mb-40 Схема проезда
+				.address-map
+					picture
+						source(srcset="./img/address-map-w480.webp 1x, ./img/address-map-w480@2x.webp 2x" media="(max-width:767px)" type="image/webp")
+						img.img-cover.br-40(src='./img/address-map.webp', srcset='./img/address-map@2x.webp 2x' width='755' height='590' loading='lazy' alt='img')

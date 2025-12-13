@@ -9,6 +9,13 @@
 		background: rgba(0,0,0, 0.2);
 		z-index: 2;
 	}
+	.img-cover{
+		width: 100%;
+		aspect-ratio:916/590;
+		@media (max-width: 767px) {
+	    	aspect-ratio:388/280;
+		}
+	}
 }
 .different-columns__narrow.flex-column{
 	row-gap: 30px;

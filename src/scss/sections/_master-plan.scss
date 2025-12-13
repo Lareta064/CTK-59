@@ -1,0 +1,16 @@
+.master-plan-gallery{
+	position: relative;
+	.btn-round{
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		z-index: 2;
+	}
+	.img-cover{
+		width: 100%;
+		aspect-ratio: 755/590;
+		@media (max-width: 767px) {
+		 aspect-ratio:388/420;
+		}
+	}
+}

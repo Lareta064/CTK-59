@@ -142,16 +142,16 @@ document.addEventListener('DOMContentLoaded', function () {
     //swipers
     let promoSwiper = new Swiper('.promo-swiper',{
       spaceBetween:16,
-      speed:700,
+      speed:1000,
        loop:true,
        navigation: {
         nextEl: ".promo-swiper-next",
         prevEl: ".promo-swiper-prev",
       },
-       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      //  autoplay: {
+      //   delay: 3500,
+      //   disableOnInteraction: false,
+      // },
     });
      let singleSwiper = new Swiper('.single-swiper',{
       spaceBetween:16,
@@ -192,6 +192,27 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+Fancybox.bind("[data-fancybox]", {
+  Thumbs: false,
+
+  Carousel: {
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],      // важно: пустой массив
+        right: ["close"],
+      },
+    },
+  },
+
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: ["close"],
+    },
+  },
+});
 });
 
     

@@ -1,0 +1,24 @@
+.project-tour{
+	.grid-column-left{
+		position: relative;
+		.project-tour__title{
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			z-index: 2;
+			color: white;
+		}
+	}
+}
+.project-tour-swiper{
+	.offer-card__header, .offer-card__footer{
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.fancybox__content img{
+	border-radius: 40px;
+	@media (max-width: 1279px) {
+	border-radius: 20px;
+	}
+}

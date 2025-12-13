@@ -34,7 +34,7 @@
 		&>*{color: white;}
 		&>*+*{margin-top: 10px;}
 	}
-	svg{color: white;}
+	.svg-right{color: white;}
 	@media (max-width: 767px) {
 	aspect-ratio: 390/280;
 	}
@@ -43,6 +43,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	&>*{width: 100%;}
 }
 .offer-card.offer-card--banner{
 	aspect-ratio:1540/720;

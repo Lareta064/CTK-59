@@ -1,0 +1,74 @@
+//3D panorama
+section.project-tour
+	.container
+		.grid-column
+			.grid-column-left.br-40
+				h2.project-tour__title.h1 Фотогалерея
+				//swiper slider
+				.promo-swiper.swiper.project-tour-swiper
+					.swiper-wrapper
+						//single slide
+						.swiper-slide
+							.offer-card.br-40
+								.offer-card__img
+									picture
+										source(srcset="./img/gallery-w480.webp 1x, ./img/gallery-w480@2x.webp 2x" media="(max-width: 767px)"  type="image/webp")
+										img.img-cover(src='./img/gallery.webp', srcset='./img/gallery@2x.webp 2x' width='1017' height='700'  alt='img')
+								
+								.offer-card__content
+									.offer-card__header
+										a(href="./img/gallery@2x.webp" data-fancybox="gallery").btn-round
+											svg.svg-screen
+												use(href='./img/sprite.svg#svg-screen')
+											
+									
+									.offer-card__footer
+										a.btn-primary(href="presentation.pdf" download )
+											span Презентация проекта .pdf
+											svg.svg-doc
+												use(href='./img/sprite.svg#svg-doc')
+						
+						//single slide
+						.swiper-slide
+							.offer-card.br-40
+								.offer-card__img
+									picture
+										source(srcset="./img/gallery-w480.webp 1x, ./img/gallery-w480@2x.webp 2x" media="(max-width: 767px)"  type="image/webp")
+										img.img-cover(src='./img/gallery.webp', srcset='./img/gallery@2x.webp 2x' width='1017' height='700'  alt='img')
+								
+								.offer-card__content
+									.offer-card__header
+										a(href="./img/gallery@2x.webp" data-fancybox="gallery").btn-round
+											svg.svg-screen
+												use(href='./img/sprite.svg#svg-screen')
+											
+									
+									.offer-card__footer
+										a.btn-primary(href="presentation.pdf" download)
+											span Презентация проекта .pdf
+											svg.svg-doc
+												use(href='./img/sprite.svg#svg-doc')
+
+					//swiper nav
+					.swiper-button-prev.promo-swiper-prev
+					.swiper-button-next.promo-swiper-next
+			//right column		
+			.promo-links.grid-column-right
+				//single card
+				.offer-card.offer-card--center.br-40
+					.offer-card__img
+						img.img-cover(src='./img/link-banner.webp', srcset='./img/link-banner@2x.webp 2x' width='493' height='335'  alt='img')
+					
+					.offer-card__content
+						.fs-24 3D тур
+						
+						
+				//single card
+				.offer-card.offer-card--center.br-40
+					.offer-card__img
+						img.img-cover(src='./img/news.webp', srcset='./img/news@2x.webp 2x' width='493' height='335'  alt='img')
+					
+					.offer-card__content
+						.fs-24 Онлайн камера строительства
+						
+						

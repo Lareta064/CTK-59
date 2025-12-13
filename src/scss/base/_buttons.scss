@@ -66,7 +66,7 @@
 		width: 100%!important;
 	}
 }
-.btn-center{
+.btn-center.btns-group{
 	display: flex;
 	justify-content: center;
 	gap:20px;
@@ -76,6 +76,18 @@
 	gap:10px;
 	}
 }
+.btn-round{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	flex-shrink: 0;
+	background-color: #fff;
+	svg{color:#00ADBB ;}
+}
+.btns-group{justify-content: flex-start;}
 .messenger-link{
 	width: 52px;
 	height: 52px;

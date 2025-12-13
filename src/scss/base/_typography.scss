@@ -82,9 +82,17 @@
 }
 .phone-link:hover,.hover-accent:hover{color: var(--accent3);}
 .hover-opac:hover{opacity: .7;}
-.bg-dark{
+.section-dark{
 	color: white;
 	background-color: var(--primary);
+	padding-block: 140px;
+	.h2, .h1, h2,h1{color: white;}
+	@media (max-width: 1364px) {
+		padding-block:100px;
+	}
+	@media (max-width: 767px) {
+		padding-block:80px;
+	}
 }
 .section-header.d-flex{
   justify-content: space-between;

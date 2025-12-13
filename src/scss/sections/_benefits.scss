@@ -1,13 +1,4 @@
-.benefits{
-	padding-block: 140px;
-	
-	@media (max-width: 1364px) {
-		padding-block:100px;
-	}
-	@media (max-width: 767px) {
-		padding-block:80px;
-	}
-}
+
 .benefit-item{
 	border: 1px solid var(--white);
 	border-radius: 40px;

@@ -142,16 +142,29 @@ document.addEventListener('DOMContentLoaded', function () {
     //swipers
     let promoSwiper = new Swiper('.promo-swiper',{
       spaceBetween:16,
-      speed:1300,
+      speed:700,
        loop:true,
        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".promo-swiper-next",
+        prevEl: ".promo-swiper-prev",
       },
-      //  autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+       autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+     let singleSwiper = new Swiper('.single-swiper',{
+      spaceBetween:16,
+      speed:700,
+       loop:true,
+       navigation: {
+        nextEl: ".single-swiper-next",
+        prevEl: ".single-swiper-prev",
+      },
+       autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     });
 
     /**HEADER MENU MOBILE */

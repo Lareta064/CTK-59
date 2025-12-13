@@ -96,3 +96,7 @@
 	padding-right: 16px;}
   }
 }
+.text-wrapper{
+	line-height: 1.4;
+   &>*+*{margin-top: 16px;}
+}

@@ -199,13 +199,14 @@ input::placeholder, textarea::placeholder{
 	@media (max-width: 1439px) {border-radius: 30px;}
 	@media (max-width: 1023px) {border-radius: 20px;}
 }
-.d-flex{
+.d-flex,.flex-column{
 	display: flex;
 	align-items: center;
 	gap:10px;
 }
 .flex-column{
 	flex-direction: column;
+	align-items:flex-start;
 }
 .flex-center{
 	justify-content: center;
@@ -261,5 +262,24 @@ input::placeholder, textarea::placeholder{
 	gap:30px;
 	@media (max-width: 767px) {
 		grid-template-columns: 1fr;
+	}
+}
+.different-columns{
+	display: flex;
+	flex-direction: row;
+	gap:30px;
+	&__wide{
+		width: 47.8vw;
+		max-width: 916px;
+		flex-shrink: 0;
+	}
+	&__wide.br-40{overflow: hidden;}
+	&__narrow{
+		flex:1;
+		
+	}
+	@media (max-width: 1023px) {
+	  flex-direction: column;
+	  &__wide{width: 100%;}
 	}
 }

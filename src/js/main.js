@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
       window.addEventListener('resize', updateSubmenuPosition);
       window.addEventListener('resize', () => {
         updateSubmenuPosition();
-
+        bodyEl.classList.remove('lock');
         if (document.documentElement.clientWidth >= BREAKPOINT) {
           closeAllMobileSubmenus();
         }

@@ -10,7 +10,9 @@ section.promo
 						.swiper-slide
 							.offer-card.br-40
 								.offer-card__img
-									img.img-cover(src='./img/banner.webp', srcset='./img/banner@2x.webp 2x' width='1017' height='700'  alt='img')
+									picture
+										source(srcset="./img/banner-w480.webp 1x, ./img/banner-w480@2x.webp 2x" madia="(max-width: 767px)"  type="image/webp")
+										img.img-cover(src='./img/banner.webp', srcset='./img/banner@2x.webp 2x' width='1017' height='700'  alt='img')
 								
 								.offer-card__content
 									.offer-card__header
@@ -30,7 +32,9 @@ section.promo
 						.swiper-slide
 							.offer-card.br-40
 								.offer-card__img
-									img.img-cover(src='./img/banner.webp', srcset='./img/banner@2x.webp 2x' width='1017' height='700'  alt='img')
+									picture
+										source(srcset="./img/banner-w480.webp 1x, ./img/banner-w480@2x.webp 2x" media="(max-width:767px)" type="image/webp")
+										img.img-cover(src='./img/banner.webp', srcset='./img/banner@2x.webp 2x' width='1017' height='700'  alt='img')
 								
 								.offer-card__content
 									.offer-card__header

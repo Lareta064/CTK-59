@@ -3,7 +3,9 @@ section.promo.banner-promo
 	.container
 		.offer-card.offer-card--banner.br-40
 			.offer-card__img
-				img.img-cover(src='./img/project-banner.webp', srcset='./img/project-banner@2x.webp 2x' width='1540' height='720'  alt='img')
+				picture
+					source(srcset="./img/project-banner-w480.webp 1x, ./img/project-banner-w480@2x.webp 2x" media="(max-width:767px)" type="image/webp")
+					img.img-cover(src='./img/project-banner.webp', srcset='./img/project-banner@2x.webp 2x' width='1540' height='720'  alt='img')
 			
 			.offer-card__content
 				.offer-card__header
@@ -15,7 +17,6 @@ section.promo.banner-promo
 						.h1 Эко-квартал Алания
 						.fs-24 ЖК «Весна»
 				
-				.offer-card__footer.btns-group.d-flex
-					
-					a.btn-light(href="#!") Выбрать квартиру
-					button.btn-primary(href="#!") Заказать консультацию
+				.offer-card__footer.btn-center
+					a.btn-light.xs-100(href="#!") Выбрать квартиру
+					button.btn-primary.xs-100(href="#!") Заказать консультацию

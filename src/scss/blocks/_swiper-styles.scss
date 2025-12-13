@@ -21,3 +21,27 @@
 .swiper-nav.d-flex{
 	position: relative;
 }
+*.swiper-button-accent{
+	background: var(--accent2);
+	&:after{color: var(--white);}
+	&:hover{
+		background: var(--secondary44);
+		&:after{color: var(--accent3);}
+	}
+}
+.swiper-special-box{
+	position: relative;
+	.swiper-button-prev{left: -70px;}
+	.swiper-button-next{right: -70px;}
+	@media (max-width: 1199px) {
+		padding-bottom: 75px;
+		 .swiper-button-prev,
+		  .swiper-button-next{
+			transform: translateY(0);
+			top: auto;
+			bottom: 0;
+		  }
+	 .swiper-button-prev{left: 0;}
+	 .swiper-button-next{right: 0;}
+	}
+}

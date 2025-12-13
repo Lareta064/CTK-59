@@ -1,8 +1,79 @@
 //Примеры планировок
 section.apartment-layouts.section-dark
 	.container
-		.section-header.d-flex
+		.section-header.d-flex.mb-40
 			h2.h2 Примеры планировок
-			.btns-group
-				button.btn-light(type="button") Расчет первоначального взноса
-				a.btn-primary(href="#!") Выбрать квартиру
+			.btns-group.d-flex
+				button.btn-light.xs-100(type="button") Расчет первоначального взноса
+				a.btn-primary.xs-100(href="#!") Выбрать квартиру
+		
+		.swiper-special-box
+			//swiper nav
+			.swiper-button-prev.apartment-swiper-prev.swiper-button-accent
+			.swiper-button-next.apartment-swiper-next.swiper-button-accent
+			
+			//swiper slider
+			.apartment-layouts-swiper.swiper
+				.swiper-wrapper
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 1-комнатная - 42 м2
+								.fs-18 от 2,1 млн. руб.
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 2-комнатная - 54 м2
+								.fs-18 от 2,1 млн. руб. 
+					
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 3-комнатная - 80 м2
+								.fs-18 от 2,1 млн. руб.
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 Студия - 32 м2
+								.fs-18 от 2,1 млн. руб.
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 3-комнатная - 80 м2
+								.fs-18 от 2,1 млн. руб.
+					//slide
+					.swiper-slide
+						.apartment-card
+							.apartment-card__img
+								picture
+									img.img-cover(src='./img/apartment.webp', srcset='./img/apartment@2x.webp 2x' width='363' height='428' loading='lazy' alt='img')
+							
+							.apartment-card__text
+								.h-20 Студия - 32 м2
+								.fs-18 от 2,1 млн. руб. 
+				

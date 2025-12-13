@@ -166,7 +166,26 @@ document.addEventListener('DOMContentLoaded', function () {
         disableOnInteraction: false,
       },
     });
-
+    let apartmentSwiper = new Swiper('.apartment-layouts-swiper',{
+      spaceBetween:20,
+      slidesPerView: 'auto',
+      speed:700,
+       loop:true,
+       navigation: {
+        nextEl: ".apartment-swiper-next",
+        prevEl: ".apartment-swiper-prev",
+      },
+      breakpoints: {
+        1365: {
+          
+          spaceBetween: 30,
+        },
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
     /**HEADER MENU MOBILE */
     const menuButtons = document.querySelectorAll('.menu-toggle');
     const mobileMenu = document.querySelector('#header-menu');

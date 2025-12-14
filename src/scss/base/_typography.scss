@@ -154,3 +154,8 @@
 	  border-radius: 20px;
 	}
 }
+.column-column-two{
+	column-count: 2;
+	column-gap:30px;
+	&>*+*{margin-top: 20px;}
+}

@@ -94,6 +94,14 @@
 		padding-block:80px;
 	}
 }
+.primary-bg{
+	background: var(--accent1);
+	color: white;
+	padding: 125px 60px;
+	@media (max-width: 1023px) {
+		padding: 80px 20px;
+	}
+}
 .section-header.d-flex{
   justify-content: space-between;
  

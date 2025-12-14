@@ -211,27 +211,130 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-Fancybox.bind("[data-fancybox]", {
-  Thumbs: false,
+  //Fancybox
+  Fancybox.bind("[data-fancybox]", {
+    Thumbs: false,
 
-  Carousel: {
+    Carousel: {
+      Toolbar: {
+        display: {
+          left: [],
+          middle: [],      // важно: пустой массив
+          right: ["close"],
+        },
+      },
+    },
+
     Toolbar: {
       display: {
         left: [],
-        middle: [],      // важно: пустой массив
+        middle: [],
         right: ["close"],
       },
     },
-  },
+  });
+  	//MASK PHONE
+		const PREFIX = "+7(";
+		function formatPhoneFromDigits(digits) {
+		digits = digits.replace(/\D/g, "").slice(0, 11); // максимум 11 цифр (включая 7)
+		let out = "+7(";
+		if (digits.length > 1) out += digits.slice(1, 4);
+		if (digits.length >= 4) out += ")" + digits.slice(4, 7);
+		if (digits.length >= 7) out += "-" + digits.slice(7, 9);
+		if (digits.length >= 9) out += "-" + digits.slice(9, 11);
+		return out;
+		}
 
-  Toolbar: {
-    display: {
-      left: [],
-      middle: [],
-      right: ["close"],
-    },
-  },
-});
+		function getDigitsFromMasked(v) {
+		return v.replace(/\D/g, "");
+		}
+
+		function setCaret(el, pos) {
+		requestAnimationFrame(() => el.setSelectionRange(pos, pos));
+		}
+
+		document.querySelectorAll("input.phone").forEach(input => {
+		// Автовставка префикса
+		input.addEventListener("focus", () => {
+			if (!input.value) {
+			input.value = PREFIX;
+			setCaret(input, PREFIX.length);
+			}
+		});
+
+		// Блокируем перемещение курсора левее префикса
+		input.addEventListener("click", () => {
+			if (input.selectionStart < PREFIX.length) setCaret(input, PREFIX.length);
+		});
+
+		// На мобилках лучше перехватывать ввод до применения
+		input.addEventListener("beforeinput", (e) => {
+			// Разрешаем только цифры/удаление/вставку
+			const allowed = ["insertText", "deleteContentBackward", "deleteContentForward", "insertFromPaste"];
+			if (!allowed.includes(e.inputType)) return;
+
+			const selStart = input.selectionStart ?? input.value.length;
+			const selEnd = input.selectionEnd ?? selStart;
+
+			// Не даём ломать фиксированный префикс
+			if (selStart < PREFIX.length && e.inputType.startsWith("delete")) {
+			e.preventDefault();
+			return;
+			}
+
+			const currentDigits = getDigitsFromMasked(input.value);
+			// Позицию в «чистых» цифрах вычислим грубо по количеству цифр слева от курсора
+			const digitsLeft = getDigitsFromMasked(input.value.slice(0, selStart)).length;
+			const digitsRight = getDigitsFromMasked(input.value.slice(selEnd)).length;
+
+			let newDigitsLeft = currentDigits.slice(0, digitsLeft);
+			let newDigitsRight = currentDigits.slice(currentDigits.length - digitsRight);
+
+			if (e.inputType === "insertText") {
+			// Разрешаем только цифры
+			if (!/^\d$/.test(e.data)) { e.preventDefault(); return; }
+			// Лимит 11 цифр
+			if ((newDigitsLeft + e.data + newDigitsRight).length > 11) { e.preventDefault(); return; }
+			newDigitsLeft += e.data;
+			e.preventDefault();
+			} else if (e.inputType === "insertFromPaste") {
+			const pasted = (e.dataTransfer?.getData("text") ?? "").replace(/\D/g, "");
+			if (!pasted) { e.preventDefault(); return; }
+			const room = 11 - (newDigitsLeft + newDigitsRight).length;
+			newDigitsLeft += pasted.slice(0, Math.max(0, room));
+			e.preventDefault();
+			} else if (e.inputType === "deleteContentBackward") {
+			if (newDigitsLeft.length > 0) newDigitsLeft = newDigitsLeft.slice(0, -1);
+			e.preventDefault();
+			} else if (e.inputType === "deleteContentForward") {
+			if (newDigitsRight.length > 0) newDigitsRight = newDigitsRight.slice(1);
+			e.preventDefault();
+			}
+
+			const allDigits = newDigitsLeft + newDigitsRight;
+			const masked = formatPhoneFromDigits(allDigits);
+			input.value = masked;
+
+			// Ставим каретку после той цифры, которую только что вводили/удаляли
+			// Находим целевую позицию по количеству цифр слева
+			const targetDigitsLeft = newDigitsLeft.length;
+			// Пробегаем по маске, пока не наберём targetDigitsLeft цифр
+			let caret = 0, count = 0;
+			while (caret < masked.length && count < targetDigitsLeft) {
+			if (/\d/.test(masked[caret])) count++;
+			caret++;
+			}
+			// Не даём залезть в префикс
+			if (caret < PREFIX.length) caret = PREFIX.length;
+			setCaret(input, caret);
+		});
+
+		// На всякий случай — финальный форматтер (если что-то проскочит)
+		input.addEventListener("input", () => {
+			const masked = formatPhoneFromDigits(getDigitsFromMasked(input.value));
+			if (masked !== input.value) input.value = masked;
+		});
+		});
 });
 
     

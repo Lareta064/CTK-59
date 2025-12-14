@@ -1,4 +1,22 @@
 //FEEDBACK
-section.feedback
-	.section
-		.feedback-content
+section.feedback.mb-180
+	.container
+		.feedback-content.br-40.primary-bg.grid-two-columns
+			.feedback-picture
+				img.img-contain(src='./img/form-bg.webp', srcset='./img/form-bg@2x.webp 2x' width='594' height='390' loading='lazy' alt='img')
+			
+			.feedback-form-wrapper
+				.h2.mb-40 Оставить заявку
+				form.feedback-form
+					.form-item
+						input.form-input(type="tel"  name="phone" class="phone" inputmode="numeric"     autocomplete="tel"  placeholder="+7(XXX)XXX-XX-XX")
+					
+					.form-agree
+						label.custom-checkbox
+							input(type="checkbox" name="agree_checkbox")
+							span.fake-checkbox
+						
+							p Принимаю #[a(href="#!") политику конфиденциальности] и даю согласие на #[a(href="#!") обработку персональных данных]
+					input.btn-dark(type="submit" value="Заказать звонок")
+						
+

@@ -186,6 +186,12 @@ input::placeholder, textarea::placeholder{
 	 row-gap:100px;
 	}
 }
+.mb-180{
+	margin-bottom: 180px;
+	@media (max-width: 1919px) {margin-bottom: 140px;}
+	@media (max-width: 1279px) {margin-bottom: 100px;}
+	
+}
 /*vendore*/
 .br-40{
 	border-radius: 40px;

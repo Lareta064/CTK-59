@@ -1,0 +1,25 @@
+.cta-txt{
+	display: flex;
+	font-weight: 500;
+	column-gap:80px;
+	&:before{
+		content:'';
+		flex-shrink:0;
+		width: 90px;
+		height: 85px;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='90' height='85' viewBox='0 0 90 85' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0H38V45L0 85V0Z' fill='%2300ADBB' /%3e%3cpath d='M52 0H90V45L52 85V0Z' fill='%2300ADBB' /%3e%3c/svg%3e ");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	@media (max-width: 1199px) {
+	  column-gap:50px;
+	}
+	@media (max-width: 1023px) {
+	  flex-direction: column;
+	   gap:10px;
+	   &:before{
+		width: 56px;
+		height: 56px;
+	   }
+	}
+}

@@ -172,7 +172,7 @@ input::placeholder, textarea::placeholder{
 	gap:40px;
 }
 .main-page{
-	padding-top: 40px;
+	padding-top: 60px;
 	padding-bottom: 180px;
 	display: flex;
 	flex-direction: column;
@@ -188,6 +188,9 @@ input::placeholder, textarea::placeholder{
 	 row-gap:100px;
 	 padding-bottom: 100px;
 	}
+}
+.page-content--main .main-page{
+	padding-top: 40px;
 }
 .mb-0, .page-content--main .main-page{
 	margin-bottom: 0!important;
@@ -221,7 +224,7 @@ input::placeholder, textarea::placeholder{
 	flex-direction: row;
 	}
 }
-.d-grid, .grid-column, .grid-two-columns{
+.d-grid, .grid-column, .grid-two-columns, .grid-three-columns{
 --gap: 30px;
 	display: grid;
 	gap:var(--gap);
@@ -232,8 +235,19 @@ input::placeholder, textarea::placeholder{
 		grid-template-columns: 1fr;
 	}
 }
+.grid-three-columns{
+	grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 1199px) {
+	grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 599px) {
+		grid-template-columns: 1fr;
+	}
+}
 .grid-column{
-	
 	grid-template-columns: 1017px 1fr;
 	.promo-swiper{width:100% ;}
 	@media (max-width: 1919px) {

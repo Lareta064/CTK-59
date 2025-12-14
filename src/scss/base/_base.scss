@@ -289,24 +289,7 @@ input::placeholder, textarea::placeholder{
 		grid-template-columns: 1fr;
 	}
 }
-.preview-text{
-	display: flex;
-	flex-direction: column;
-	
-	gap:30px;
-}
-.preview-image{
-	flex:1;
-	img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		aspect-ratio: 755/520;
-		@media (max-width: 767px) {
-		  aspect-ratio:388/280;
-		}
-	}
-}
+
 .different-columns{
 	display: flex;
 	flex-direction: row;
@@ -331,4 +314,28 @@ input::placeholder, textarea::placeholder{
 	@media (max-width: 1023px) {
 	margin-bottom: 20px;
 	}
+}
+.column-count-two, .column-count-three{
+	column-count: 2;
+	column-gap:30px;
+	
+	&>*{
+		page-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+	}
+	&>*+*{margin-top: 20px;}
+	@media (max-width: 1199px) {
+	   column-count: 1;
+	
+	}
+}
+ul, ol{
+	&.column-count-two, &.column-count-three{
+		@media (max-width: 1199px) {
+	  		&>*+*{margin-top: 10px;}
+	   }
+	}
+}
+.column-count-three{
+	column-count: 3;
 }

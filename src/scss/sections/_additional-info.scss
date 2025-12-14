@@ -43,20 +43,7 @@ li:before {
 	font-size: 28px;
 }
 }
-.simple-list.simple-list--three-columns{
-	ul{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		column-width: auto;
-		gap:20px;
-	}
-	@media (max-width: 1199px) {
-	ul{
-		grid-template-columns: 1fr;
-		gap:10px;
-	}
-	}
-}
+
 .simple-list, .simple-list ol{
 
 	display: flex;
@@ -66,20 +53,9 @@ li:before {
 	gap:10px;
 	}
 }
-.simple-list.fs-20{
-	@media (max-width: 1439px) {
-		font-size: 18px;
-		ol li{padding-left: 24px;}
-		ol li:before{
-			font-size: 20px;
-			top:-2px;
-		}
-	}
-}
-.additional-info .grey-block .grid-three-columns{
-	@media (max-width: 1199px) {
-		grid-template-columns: 1fr;
-		gap:20px;
-		
+
+.additional-info .grey-block{
+	@media(min-width:1200px){
+		padding-block: 40px;
 	}
 }

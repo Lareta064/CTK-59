@@ -11,12 +11,19 @@ function initTabsSliders(selector = '[data-tabs]') {
       if (!swiperEl) return;
 
       const swiper = new Swiper(swiperEl, {
-        slidesPerView: 1,
-        spaceBetween: 16,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
         navigation: {
           prevEl: panel.querySelector('.tab-swiper-prev'),
           nextEl: panel.querySelector('.tab-swiper-next'),
         },
+		breakpoints: {
+        768: { spaceBetween: 30, slidesPerView: 2, },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
         watchOverflow: true,
       });
 

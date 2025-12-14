@@ -1,50 +1,121 @@
 //BUILDING
 section.building
-	.section
-		.tabs-slider(data-tabs)
-			.tabs-nav
-				button.tabs-nav-btn(type="button" data-tbtn="1") Все объекты
-				button.tabs-nav-btn(type="button" data-tbtn="2") 1 очередь
-				button.tabs-nav-btn(type="button" data-tbtn="3") 2 очередь
+	.container
+		h2.h2.mb-40 Ход строительства
+		.building-content
+			.tabs-slider(data-tabs)
+				.tabs-nav.d-flex.mb-40
+					button.tabs-nav-btn(type="button" data-tbtn="1") Все объекты
+					button.tabs-nav-btn(type="button" data-tbtn="2") 1 очередь
+					button.tabs-nav-btn(type="button" data-tbtn="3") 2 очередь
 
 
-			.tabs-content-wrapper
-				//content for Все объекты
-				.tabs-content(data-tcontent="1")
-					//slider nav
-					button.tab-swiper-prev.swiper-button-prev(type="button")
-					button.tab-swiper-next.swiper-button-next(type="button")
-					//slider
-					.swiper.tab-swiper
-						.swiper-wrapper
-							.swiper-slide
-								.offer-card.offer-card--center
-									
-							.swiper-slide
-								h1 BBB
-				//content for 1 очередь	
-				.tabs-content(data-tcontent="2" hidden)
-					//slider nav
-					button.tab-swiper-prev.swiper-button-prev(type="button")
-					button.tab-swiper-next.swiper-button-next(type="button")
-					//slider
-					.swiper.tab-swiper
-						.swiper-wrapper
-							.swiper-slide
-								h1 CCC
-							.swiper-slide
-								h1 DDD
-				//content for 2 очередь	
-				.tabs-content(data-tcontent="3" hidden)
-					//slider nav
-					button.tab-swiper-prev.swiper-button-prev(type="button")
-					button.tab-swiper-next.swiper-button-next(type="button")
-					//slider
-					.swiper.tab-swiper
-						.swiper-wrapper
-							.swiper-slide
-								h1 CCC
-							.swiper-slide
-								h1 DDD
-
-
+				.tabs-content-wrapper
+					//content for Все объекты
+					.tabs-content(data-tcontent="1")
+						//slider nav
+						button.tab-swiper-prev.swiper-button-prev(type="button")
+						button.tab-swiper-next.swiper-button-next(type="button")
+						//slider
+						.swiper.tab-swiper
+							.swiper-wrapper
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Ноябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Октябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Сентябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Август 2025
+					//content for 1 очередь	
+					.tabs-content(data-tcontent="2" hidden)
+						//slider nav
+						button.tab-swiper-prev.swiper-button-prev(type="button")
+						button.tab-swiper-next.swiper-button-next(type="button")
+						//slider
+						.swiper.tab-swiper
+							.swiper-wrapper
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Ноябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Октябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Сентябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Август 2025	
+					//content for 2 очередь	
+					.tabs-content(data-tcontent="3" hidden)
+						//slider nav
+						button.tab-swiper-prev.swiper-button-prev(type="button")
+						button.tab-swiper-next.swiper-button-next(type="button")
+						//slider
+						.swiper.tab-swiper
+							.swiper-wrapper
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Ноябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Октябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Сентябрь 2025
+								.swiper-slide
+									.offer-card.offer-card--center
+										.offer-card__img
+											img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
+										
+										.offer-card__content
+											.fs-24 Август 2025

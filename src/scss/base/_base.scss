@@ -228,7 +228,7 @@ input::placeholder, textarea::placeholder{
 --gap: 30px;
 	display: grid;
 	gap:var(--gap);
-	@media (max-width: 1439px) {
+	@media (max-width: 1199px) {
 	 --gap: 20px;
 	}
 	@media (max-width: 767px) {

@@ -136,3 +136,21 @@
 	line-height: 1.4;
    &>*+*{margin-top: 16px;}
 }
+.grey-block{background: var(--secondary3);}
+.primary-block{background: var(--accent1);  * {color: white;}}
+	
+
+.grey-block,
+.primary-block{
+	display: flex;
+	border-radius: 40px;
+	flex-direction: column;
+	padding: 30px;
+	gap:30px;
+	
+	@media (max-width: 1023px) {
+	  gap:20px;
+	  padding: 20px;
+	  border-radius: 20px;
+	}
+}

@@ -186,6 +186,27 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     });
+    let gallerySwiper = new Swiper('.gallery-swiper',{
+      spaceBetween:20,
+      slidesPerView: 'auto',
+      speed:700,
+       loop:true,
+       navigation: {
+        nextEl: ".gallery-swiper-next",
+        prevEl: ".gallery-swiper-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
+    });
+    
     /**HEADER MENU MOBILE */
     const menuButtons = document.querySelectorAll('.menu-toggle');
     const mobileMenu = document.querySelector('#header-menu');

@@ -30,18 +30,13 @@
 @use "sections/_news-promo";
 @use "sections/additional-info";
 @use "sections/blockquote";
+@use "sections/faq";
+@use "sections/_gallery-swiper";
+@use "sections/_about-promo";
+@use "sections/_about-politic";
+@use "sections/_our-team";
 
-// @use "base/_test";
-// @import "base/_grids";
-// @import "base/_typography";
-// @import "base/_icons";
-// @import "base/_buttons";
 
-
-// @import "base/_form";
-
-// @import "blocks/_marker-list";
-// @import "blocks/_tabs";
 
 // ui
 @use "ui/_ui-navigation";

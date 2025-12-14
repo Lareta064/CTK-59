@@ -1,16 +1,4 @@
-.grey-block{
-	padding: 40px;
-	border-radius: 40px;
-	background: var(--secondary3);
-	display: flex;
-	flex-direction: column;
-	gap:30px;
-	@media (max-width: 1023px) {
-	  gap:20px;
-	  padding: 20px;
-	  border-radius: 20px;
-	}
-}
+
 .simple-list{
 	ul {
 		margin: 0;

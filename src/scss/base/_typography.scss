@@ -29,12 +29,14 @@
 
 @media (max-width: 1919px) {
 	.h1{font-size: 3.5vw;}
-	 .h2{font-size: 40px;}
+	.h2{font-size: 40px;}
+	.h3{font-size: 36px;}
 	
 }
 @media (max-width: 1364px) {
   .h1{font-size: 46px;}
-  .h2{font-size: 32px;}
+  .h2{font-size: 36px;}
+  .h3{font-size: 32px;}
   .fs-90{font-size: 70px;}
   .fs-28{font-size: 24px;}
   .fs-24{font-size: 20px;}
@@ -42,6 +44,7 @@
 }
 @media (max-width: 767px) {
 .fs-90{font-size: 60px;}
+.h3{font-size: 28px;}
 }
 .link, .link-primary{
 	position: relative;

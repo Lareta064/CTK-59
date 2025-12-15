@@ -10,8 +10,9 @@
 		height: unset;
 	}
 	@media (max-width: 767px) {
+		height:calc(100dvh - 150px);
 	  .offer-card{
-		height: 580px;
+		height:100%;
 		aspect-ratio:unset;
 		.tags-block{display: none;}
 	  }
@@ -37,8 +38,7 @@
 	opacity: 0;
 	background-color: var(--secondary44);
 }
-.promo .swiper-button-next{right:30px;}
-.promo .swiper-button-prev{left:30px;}
+
 .promo .swiper:hover{
 	.swiper-button-next,
     .swiper-button-prev{

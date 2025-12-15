@@ -21,9 +21,12 @@
 	color: var(--white);
 	transition: .3s; 
 	white-space: nowrap;
+	transition: .3s; 
+	&:hover{background: var(--accent3);}
 	&.is-active{
 		background: var(--primary)
 	}
+	&.is-active:hover{background: var(--accent3);}
 }
 .tabs-content.is-active {
   opacity: 1;
@@ -45,9 +48,9 @@
 	@media(min-width: 1024px){
 	.swiper-button-next,
     .swiper-button-prev{
-		transform: translateY(0);
+		transform: translateY(15px);
 	}
-	.swiper-button-next{top:0;}
-	.swiper-button-prev{top:0; left: auto; right: 112px;}
+	.swiper-button-next{top:0; right:0;}
+	.swiper-button-prev{top:0; left: auto; right: 62px;}
 	}
 }

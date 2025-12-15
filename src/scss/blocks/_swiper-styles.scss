@@ -9,15 +9,29 @@
 	flex-shrink: 0;
 	transition: .3s;
 	z-index: 5;
-	background: var(--secondary3);
+	background: var(--secondary44);
 	&:after{
-		font-size: 22px;
+		font-size: 16px;
 		color: var(--accent3);
 	}
 	&:hover{
-		background: var(--accent1);
-		&:after{color: white;}
+		background: white;
+		&:after{color: var(--accent3);}
 	}
+	&.accent-hover:hover{
+		@media(min-width:1024px){
+
+			background: var(--accent1);
+			&:after{color: white;}
+		}
+	}
+}
+.accent-hover
+.swiper-button-next{right:30px;}
+.swiper-button-prev{left:30px;}
+@media (max-width: 1023px) {
+.swiper-button-next{right:20px;}
+.swiper-button-prev{left:20px;}
 }
 .swiper-nav.d-flex{
 	position: relative;

@@ -87,7 +87,8 @@
 	height: 80px;
 	flex-shrink: 0;
 	background-color: #fff;
-	svg{color:#00ADBB ;}
+	transition: .3s; 
+	svg{color:#00ADBB;transition: .3s; }
 	@media (max-width: 767px) {
 		width: 60px;
 		height: 60px;
@@ -96,6 +97,10 @@
 			height: 24px;
 		}
 	}
+}
+*.accent-hover:hover{
+	background: var(--accent1)!important;
+	svg{color: white!important;}
 }
 
 .messenger-link{

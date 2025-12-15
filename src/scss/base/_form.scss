@@ -17,7 +17,6 @@ textarea.form-textarea{
 	&::placeholder{
 		color: var(--secondary);
 	}
-	
 }
 textarea.form-textarea{
 	height: 60px;
@@ -25,7 +24,7 @@ textarea.form-textarea{
 .custom-checkbox{
 	position: relative;
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	gap:10px;
 	input[type="checkbox"]{
 		position: absolute;

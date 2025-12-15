@@ -23,6 +23,8 @@
 		.form-agree{
 			flex-grow: 1;
 			order:10;
+			font-size: 14px;
+			min-width: 100%;
 		}
 	}
 	@media (max-width: 1364px) {
@@ -46,6 +48,9 @@
 	.feedback-form{
 		flex-direction: column;
 		.form-agree{order:unset;}
+	}
+	@media (max-width: 419px) {
+	.feedback-form  .form-agree .fs-14{font-size: 12px;}
 	}
 	}
 }

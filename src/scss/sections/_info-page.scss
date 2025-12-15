@@ -1,8 +1,4 @@
-.info-preview .grid-two-columns{
-	@media (max-width: 767px) {
-	gap: 10px;
-	}
-}
+
 .title-mobile{
 	display: none;
 	@media (max-width: 767px) {
@@ -30,7 +26,7 @@
 	   gap:20px;
 	}
 	@media (max-width: 767px) {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	    gap:10px;
 	}
 }

@@ -100,7 +100,10 @@
 	line-height: 1;
 	transition: .3s; 
 }
-.phone-link:hover,.hover-accent:hover{color: var(--accent3);}
+.phone-link:hover,.hover-accent:hover{
+	color: var(--accent3);
+	svg{color: var(--accent3);}
+}
 .hover-opac:hover{opacity: .7;}
 .section-dark,.section-grey{
 	padding-block: 140px;

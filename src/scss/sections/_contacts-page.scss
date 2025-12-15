@@ -1,0 +1,34 @@
+.contacts-page{
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap:180px;
+	@media (max-width: 1919px) { row-gap:140px;}
+
+	@media (max-width: 1279px) { row-gap:100px;}
+}
+.contact-block{
+	.h4{margin-bottom: 20px;}
+}
+.contacts-list{
+	.contacts-item +.contacts-item{margin-top: 10px;}
+}
+.contacts-item{
+	display: flex;
+	flex-direction: column;
+	gap:4px;
+	a{transition: .3s; &:hover{opacity: .5;}}
+}
+.map-wrapper{
+	width: 100%;
+	height: 35vw;
+	max-height: 600px;
+	
+}
+@media (max-width: 767px) {
+.contact-block{
+	.h4{margin-bottom: 1px;}
+}
+.contacts-list{
+	.contacts-item +.contacts-item{margin-top: 4px;}
+	}
+}

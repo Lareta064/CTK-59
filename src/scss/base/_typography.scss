@@ -130,13 +130,15 @@
 }
 .section-header.d-flex{
   justify-content: space-between;
- 
-  @media (max-width: 424px) {
-	flex-wrap: wrap;
-	gap:20px;
-	[class^="btn-"]{padding-left: 10px;
-	padding-right: 16px;}
-  }
+ @media (max-width: 767px) {
+	flex-direction: column;
+	align-items: flex-start;
+     gap:20px;
+ }
+//   @media (max-width: 419px) {
+// 	[class^="btn-"]{padding-left: 10px;
+// 	padding-right: 16px;}
+//   }
 }
 .section-header.grid-two-columns{
 	@media (max-width: 1023px) {

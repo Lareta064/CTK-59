@@ -20,11 +20,12 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1;
-
+	svg{transition: .3s; }
 	&:hover{
 		background: var(--accent2);
 		border-color:var(--accent2);
 		color: var(--white);
+		svg{color: var(--white);}
 	}
 	&.disabled, &[disabled]{
 		opacity: 0.4!important;

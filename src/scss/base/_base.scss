@@ -200,6 +200,7 @@ input::placeholder, textarea::placeholder{
 }
 .mb-0, .page-content--main .main-page{
 	margin-bottom: 0!important;
+	padding-bottom: 0;
 	
 }
 /*vendore*/
@@ -230,7 +231,7 @@ input::placeholder, textarea::placeholder{
 	flex-direction: row;
 	}
 }
-.d-grid, .grid-column, .grid-two-columns, .grid-three-columns, .grid-two-columns-1024{
+.d-grid, .grid-column, .grid-single-column, .grid-two-columns, .grid-three-columns, .grid-two-columns-1024{
 --gap: 30px;
 	display: grid;
 	gap:var(--gap);
@@ -275,6 +276,9 @@ input::placeholder, textarea::placeholder{
 			grid-template-columns: 1fr;
 		}
 	}
+}
+.grid-single-column{
+	grid-template-columns: 1fr!important;
 }
 .grid-two-columns, .grid-two-columns-1024{
 	display: grid;

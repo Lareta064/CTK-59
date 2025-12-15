@@ -29,10 +29,13 @@
 
 @media (max-width: 1919px) {
 	.h1{font-size: 3.5vw;}
-	.h2{font-size: 40px;}
+	
+	
+}
+@media (max-width: 1439px) {
+   .h2{font-size: 40px;}
 	.h3{font-size: 36px;}
 	.h4{font-size: 32x;}
-	
 }
 @media (max-width: 1364px) {
   .h1{font-size: 46px;}
@@ -44,11 +47,14 @@
   .fs-24{font-size: 20px;}
   
 }
-@media (max-width: 767px) {
-	.h1{font-size: 40px;}
+@media (max-width: 1199px) {
+    .h1{font-size: 40px;}
 	.h2{font-size: 32px;}
 	.h3{font-size: 28px;}
 	.h4, .h-24{font-size: 20px;}
+}
+@media (max-width: 767px) {
+	
 	.fs-90{font-size: 60px;}
 }
 @media (max-width: 420px) {

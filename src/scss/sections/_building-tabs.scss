@@ -2,6 +2,13 @@
   opacity: 0;
   transition: opacity .5s ease;
 }
+.tabs-nav{
+	flex-wrap: wrap;
+	row-gap:10px;
+	@media (max-width: 399px) {
+	gap:10px;
+	}
+}
 .tabs-nav-btn{
 	display: inline-flex;
 	justify-content: center;
@@ -13,6 +20,7 @@
 	font-size: 16px;
 	color: var(--white);
 	transition: .3s; 
+	white-space: nowrap;
 	&.is-active{
 		background: var(--primary)
 	}
@@ -25,6 +33,9 @@
 		
 		@media (max-width: 767px) {
 		 width: 388px!important;
+		}
+		@media (max-width: 419px) {
+		  width: 345px!important;
 		}
 	}
 }

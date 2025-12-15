@@ -64,6 +64,7 @@
 .xs-100{
 	@media (max-width: 767px) {
 		width: 100%!important;
+		max-width: 380px;
 	}
 }
 .btn-center.btns-group{
@@ -95,7 +96,16 @@
 		}
 	}
 }
-.btns-group{justify-content: flex-start;}
+.btns-group{
+	justify-content: flex-start;
+	gap:20px;
+	display: flex;
+	
+	@media (max-width: 767px) {
+		flex-direction: column;
+	    gap:10px;
+	}
+}
 .messenger-link{
 	width: 52px;
 	height: 52px;

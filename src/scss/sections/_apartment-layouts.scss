@@ -46,8 +46,11 @@
 	.swiper-slide{
 		height: unset;
 		width: 363px!important;
-		@media (max-width:1023x) {
-		  width: 363px!important;
+		@media (max-width:1023px) {
+		  width: 388px!important;
+		}
+		@media (max-width: 419px) {
+		  width: 345px!important;
 		}
 	}
 	@media (max-width: 1023px) {

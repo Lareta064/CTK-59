@@ -32,3 +32,18 @@
 	}
 	
 }
+.promo .swiper-button-next,
+.promo .swiper-button-prev{
+	opacity: 0;
+	background-color: var(--secondary44);
+}
+.promo .swiper:hover{
+	.swiper-button-next,
+    .swiper-button-prev{
+		opacity: 1;
+		&:hover{
+			background-color: white;
+			&:after{color: #00666E;}
+		}
+	}
+}

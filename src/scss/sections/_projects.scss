@@ -11,7 +11,7 @@
 	&__content{
 		background: var(--accent1);
 		padding: 30px;
-		border-radius: 40px;
+		border-radius: 0 0 40px 40px;
 		font-weight: 500;
 		display: grid;
 		grid-template-columns: 1fr;
@@ -30,7 +30,7 @@
 		@media (max-width: 1439px) {border-radius: 30px;}
 		@media (max-width: 1364px) {bottom: -220px; padding: 20px;}
 
-	     @media (max-width: 1023px) {border-radius: 20px;}
+	     @media (max-width: 1023px) {border-radius: 0 0 20px 20px;}
 	}
 	&__title{
 		justify-content: space-between;
@@ -69,11 +69,16 @@
 	}
   &:hover{
 	background-position: center -100px;
-	.project-card__content{
-		bottom: 0;
-		.project-card__list{padding-top: 0;}
-	}
+	
   }
+  .project-card__content:hover{
+		bottom: 0;
+		border-radius: 40px;
+		.project-card__list{padding-top: 0;}
+		@media (max-width: 1023px) {
+		border-radius: 20px;
+		}
+	}
   @media (max-width: 1439px) {border-radius: 30px;}
   @media (max-width: 1364px) {
 	  height: 480px;

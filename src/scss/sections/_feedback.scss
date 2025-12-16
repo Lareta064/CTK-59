@@ -87,3 +87,6 @@
 	max-height: 390px;
 	aspect-ratio: 594/390;
 }
+@media(min-width:1200px){
+	.feedback .feedback-content{gap:0;}
+}

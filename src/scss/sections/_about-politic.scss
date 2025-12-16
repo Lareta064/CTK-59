@@ -1,3 +1,10 @@
 .about-project .text-wrapper{
 	max-width: 523px;
 }
+.about-politic{
+	.h-20{line-height: 1.4;}
+	@media (max-width: 767px) {
+		.container.gap-30{gap:20px;}
+	.h-20{font-size: 16px;}
+	}
+}

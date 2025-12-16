@@ -324,6 +324,11 @@ input::placeholder, textarea::placeholder{
 	margin-bottom: 20px;
 	}
 }
+.md-gap-30{
+	@media (max-width: 1023px) {
+	  gap:30px!important;
+	}
+}
 .column-count-two, .column-count-three{
 	column-count: 2;
 	column-gap:30px;

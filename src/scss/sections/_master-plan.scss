@@ -14,3 +14,8 @@
 		}
 	}
 }
+.master-plan .grid-two-columns{
+	@media (max-width: 1023px) {
+	gap:40px;
+	}
+}

@@ -28,10 +28,14 @@
 	gap:var(--gap);
 	&>*{width: 100%; height: calc((100% - var(--gap)) / 2);}
 	@media (max-width: 1023px) {
-		margin-top: 40px;
+		margin-top: 30px;
 	  &>*{height: auto;}
 	}
-	
+}
+.main-page .promo-links{
+	@media (max-width: 1023px) {
+	  margin-top: 40px;
+	}
 }
 .promo .swiper-button-next,
 .promo .swiper-button-prev{

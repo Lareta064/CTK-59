@@ -5,6 +5,7 @@
 .tabs-nav{
 	flex-wrap: wrap;
 	row-gap:10px;
+	margin-bottom: 40px;	
 	@media (max-width: 399px) {
 	gap:10px;
 	}
@@ -41,6 +42,9 @@
 		  width: 345px!important;
 		}
 	}
+}
+.building .section-header{
+	margin-bottom: 40px;
 }
 .building-content{
 	position: relative;

@@ -273,10 +273,13 @@ input::placeholder, textarea::placeholder{
 	}
 	@media (max-width: 767px) {
 		.grid-column-right{
-			gap: 40px;
+			gap: 30px;
 			grid-template-columns: 1fr;
 		}
 	}
+}
+.main-page .grid-column .grid-column-right{
+	@media (max-width: 767px) {gap: 40px;}
 }
 .grid-single-column{
 	grid-template-columns: 1fr!important;
@@ -311,6 +314,7 @@ input::placeholder, textarea::placeholder{
 	}
 	@media (max-width: 1023px) {
 	  flex-direction: column;
+	  gap:40px;
 	  &__wide{width: 100%;}
 	}
 }

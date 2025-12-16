@@ -16,6 +16,9 @@
 	    	aspect-ratio:388/280;
 		}
 	}
+	@media (max-width: 1023px) {
+	border-radius: 20px;
+	}
 }
 .different-columns__narrow.flex-column{
 	row-gap: 30px;

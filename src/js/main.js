@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let promoSwiper = new Swiper('.promo-swiper',{
       spaceBetween:16,
       speed:1000,
-       loop:true,
+      
        navigation: {
         nextEl: ".promo-swiper-next",
         prevEl: ".promo-swiper-prev",
@@ -156,21 +156,18 @@ document.addEventListener('DOMContentLoaded', function () {
      let singleSwiper = new Swiper('.single-swiper',{
       spaceBetween:16,
       speed:700,
-       loop:true,
+       
        navigation: {
         nextEl: ".single-swiper-next",
         prevEl: ".single-swiper-prev",
       },
-       autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+      
     });
     let apartmentSwiper = new Swiper('.apartment-layouts-swiper',{
       spaceBetween:20,
       slidesPerView: 'auto',
       speed:700,
-       loop:true,
+      
        navigation: {
         nextEl: ".apartment-swiper-next",
         prevEl: ".apartment-swiper-prev",
@@ -190,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween:20,
       slidesPerView: 'auto',
       speed:700,
-       loop:true,
+      
        navigation: {
         nextEl: ".gallery-swiper-next",
         prevEl: ".gallery-swiper-prev",

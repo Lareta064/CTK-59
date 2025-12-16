@@ -70,11 +70,11 @@
 }
 .btns-group{
 	display: flex;
-	gap:20px;
+	gap:10px;
 	&>*+*{margin-top: 0!important;}
 	@media (max-width: 767px) {
 		flex-direction: column;
-		gap:10px;
+		
 	}
 }
 .btn-center{display: flex;justify-content: center;}

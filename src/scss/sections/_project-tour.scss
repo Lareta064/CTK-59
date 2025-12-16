@@ -3,16 +3,21 @@
 		position: relative;
 		.project-tour__title{
 			position: absolute;
-			top: 30px;
+			top: 27px;
 			left: 30px;
 			z-index: 2;
 			color: white;
 			@media (max-width: 1364px) {
-				top: 20px;
+				
 				left: 20px;
 			}
 		}
 	}
+	.section-header{
+		margin-bottom: 40px;
+		
+	}
+	.promo-links{margin-top: 20px;}
 }
 .project-tour-swiper{
 	.offer-card__header, .offer-card__footer{
@@ -36,6 +41,11 @@
 		}
 	}
 	@media (max-width: 767px) {
+		height: auto;
+		.offer-card__img img{
+			aspect-ratio:388/420;
+		}
+
 	.offer-card__footer{justify-content: center;}
 	}
 }

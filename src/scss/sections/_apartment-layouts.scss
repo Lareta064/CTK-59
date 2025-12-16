@@ -2,7 +2,9 @@
 	background: var(--secondary3);
 	border-radius: 40px;
 	overflow: hidden;
-	
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	&__img{
 		height: 428px;
 		width: 100%;
@@ -10,11 +12,15 @@
 	&__text{
 		padding: 30px;
 		display: flex;
+		width: 100%;
+		flex:1;
 		flex-direction: column;
 		gap:10px;
-		color: var(--primary);
+		.h-20{flex:1;}
+		.fs-18{font-size: 18px;}
+		*{color: var(--primary);} 
 		@media (max-width: 1023px) {
-		 padding: 20px;
+		 padding: 40px 20px;
 		}
 	}
 	@media (max-width: 1023px) {
@@ -34,6 +40,7 @@
 			justify-content: flex-end;
 		}
 		@media (max-width: 767px) {
+			text-align: center;
 		 .btns-group{
 			flex-direction: column;
 			gap:10px;
@@ -45,6 +52,7 @@
 	border-radius: 40px;
 	.swiper-slide{
 		height: unset;
+		display: flex;
 		width: 363px!important;
 		@media (max-width:1023px) {
 		  width: 388px!important;

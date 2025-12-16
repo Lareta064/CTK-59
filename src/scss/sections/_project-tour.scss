@@ -1,6 +1,7 @@
 .project-tour{
 	.grid-column-left{
 		position: relative;
+		display: flex;
 		.project-tour__title{
 			position: absolute;
 			top: 27px;
@@ -17,7 +18,14 @@
 		margin-bottom: 40px;
 		
 	}
-	.promo-links{margin-top: 20px;}
+	@media (max-width: 1023px) {
+		.grid-column{
+			display: grid;
+			grid-template-columns: 1fr;
+			gap:20px;
+		}
+	
+	}
 }
 .project-tour-swiper{
 	.offer-card__header, .offer-card__footer{

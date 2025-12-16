@@ -1,6 +1,27 @@
+.feedback{
+	@media (max-width: 1023px) {
+	position: relative;
+	overflow: hidden;
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&:after{
+		content:'';
+		position: absolute;
+		width: 100vw;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--accent1);
+	}
+	}
+}
 .feedback-content{
 	padding: 0 60px;
-	
+	position: relative;
+	z-index: 2;
 	.h2{color: white;}
 	.form-agree a{
 		color: var(--primary);

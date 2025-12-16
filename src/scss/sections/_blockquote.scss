@@ -1,3 +1,9 @@
+.cta{
+	@media (max-width: 767px) {
+	.container{padding-left:35px;}
+
+	}
+}
 .cta-txt{
 	display: flex;
 	font-weight: 500;

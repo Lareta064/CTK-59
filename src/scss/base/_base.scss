@@ -295,6 +295,7 @@ input::placeholder, textarea::placeholder{
 .grid-two-columns-1024{
 	@media (max-width: 1023px) {
 		grid-template-columns: 1fr;
+		gap:20px;
 	}
 }
 
@@ -323,6 +324,9 @@ input::placeholder, textarea::placeholder{
 	@media (max-width: 1023px) {
 	margin-bottom: 20px;
 	}
+}
+.bottom-40{
+	margin-bottom: 40px;
 }
 .md-gap-30{
 	@media (max-width: 1023px) {

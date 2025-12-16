@@ -22,8 +22,8 @@
 	position: relative;
 	
 	@media (min-width: 1024px) {
-	  .gallery-swiper-prev,
-		.gallery-swiper-next{
+	  .swiper-button-prev,
+		.swiper-button-next{
 			top: unset;
 			left: unset;
 			right: unset;
@@ -31,14 +31,15 @@
 			top:-72px;
 			right:0;
 		}
-		.gallery-swiper-prev{
-			right: 112px;
+		.swiper-button-prev{
+			right: 62px;
 		}
 	}
 }
 .gallery-swiper .swiper-slide{
 	@media (max-width: 767px) {
 	  width: 388px!important;
+	  display: flex;
 	}
 	@media (max-width: 419px) {
 		width: 345px!important;

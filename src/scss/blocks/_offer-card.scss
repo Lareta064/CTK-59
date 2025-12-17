@@ -81,6 +81,8 @@
 }
 *.card-hover{
 	cursor:pointer;
+	
+	overflow: hidden;
  &:after{
 	content:'';
 	display: block;

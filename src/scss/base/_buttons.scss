@@ -78,7 +78,7 @@
 	}
 }
 .btn-center{display: flex;justify-content: center;}
-.btn-round{
+.btn-round,.btn-screen{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -98,11 +98,11 @@
 		}
 	}
 }
-*.accent-hover:hover{
+*.accent-hover:hover, .btn-screen:hover{
 	background: var(--accent1)!important;
 	svg{color: white!important;}
 }
-
+.btn-screen:hover svg{transform:scale(1.2);}
 .messenger-link{
 	width: 52px;
 	height: 52px;
@@ -117,5 +117,20 @@
 	&:hover{
 		background-color: var(--accent2);
 		svg{color: white;}
+	}
+}
+.btn-close{
+	display: flex;
+	width: 52px;
+	height: 52px;
+	border: 1px solid var(--primary);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+	svg{color:var(--primary); transition: .3s; }
+	&:hover{
+		border: 1px solid var(--accent1);
+		svg{color: var(--accent1);}
 	}
 }

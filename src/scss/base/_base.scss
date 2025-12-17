@@ -43,7 +43,7 @@
 	--error: #bb0e00;
 	--white: #fff;
 	--black: #000;
-	--primary: #2e2f31;
+	--primary: rgb(46, 47, 49);
 	--primary1: #54565a;
 	--secondary: #8b8c8f;
 	--secondary1: #b5b6b8;
@@ -68,10 +68,12 @@ body {
 	-moz-osx-font-smoothing: auto;
 	font-size: 16px;
 	line-height: 1.3;
+	background-color: #fff;
 	
 }
 .lock{
-	overflow: hidden; 
+	overflow: hidden;
+	@media(min-width:1200px){padding-right: 17px;}
 }
 .page-content{
 	display: flex;
@@ -196,9 +198,6 @@ input::placeholder, textarea::placeholder{
 	}
 }
 
-// .page-content .main-page{
-// 	padding-top: 40px;
-// }
 .mb-0, .page-content  .main-page{
 	margin-bottom: 0!important;
 	padding-bottom: 0;

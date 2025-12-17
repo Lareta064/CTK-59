@@ -124,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
           });
         });
       }
-
       // Инициализация
       updateSubmenuPosition();
       initMobileSubmenus();
@@ -148,10 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
         nextEl: ".promo-swiper-next",
         prevEl: ".promo-swiper-prev",
       },
-      //  autoplay: {
-      //   delay: 3500,
-      //   disableOnInteraction: false,
-      // },
+      
     });
      let singleSwiper = new Swiper('.single-swiper',{
       spaceBetween:16,
@@ -205,15 +201,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
     /**HEADER MENU MOBILE */
-    const menuButtons = document.querySelectorAll('.menu-toggle');
+    const menuButton = document.querySelector('.menu-toggle');
     const mobileMenu = document.querySelector('#header-menu');
-    if(mobileMenu){
+    
       function closeMobileMenu(){
         menuButton.classList.remove('active');
         mobileMenu.classList.remove('active');
         bodyEl.classList.remove('lock');
       }
-      menuButtons.forEach((menuButton)=>{
+      
         menuButton.addEventListener('click', ()=> {
       
           if( menuButton.classList.contains('active')){
@@ -227,8 +223,46 @@ document.addEventListener('DOMContentLoaded', function () {
             bodyEl.classList.add('lock');
           }
       });
-    });
-  }
+  
+  
+  /*POPUP */
+    const popupBlocks = document.querySelectorAll('.popup-wrapper');
+    if(popupBlocks.length >0){
+      const popupOpenBtns = document.querySelectorAll('[data-btn]');
+      popupOpenBtns.forEach((btn)=>{
+        btn.addEventListener('click', ()=>{
+          let btnData = btn.dataset.btn;
+         
+          popupBlocks.forEach((el)=>{
+             let elData = el.dataset.role;
+              if(elData ==  btnData){
+                 el.classList.add('is-open');
+                 closeMobileMenu();
+                 bodyEl.classList.add('lock');
+              }
+          });
+        });
+      });
+      popupBlocks.forEach((el)=>{
+          let elCloseBtns = el.querySelectorAll('[data-close]');
+          elCloseBtns.forEach((btn)=>{
+              btn.addEventListener('click', ()=>{
+                  el.classList.remove('is-open');
+                  bodyEl.classList.remove('lock');
+              });
+          });
+          el.addEventListener('click', (e)=>{
+            
+            if(e.target == e.currentTarget){
+               el.classList.remove('is-open');
+                bodyEl.classList.remove('lock');
+            }
+          });
+      });
+
+      
+    }
+
   //Fancybox
   Fancybox.bind("[data-fancybox]", {
     Thumbs: false,

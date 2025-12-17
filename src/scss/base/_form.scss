@@ -9,7 +9,7 @@ textarea.form-textarea{
 	border-radius: 52px;
 	background-color: #fff;
 	padding:15px 16px;
-	
+	border: 1px solid var(--secondary);
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 16px;
@@ -47,8 +47,11 @@ textarea.form-textarea{
 	}
 	input[type="checkbox"]:checked + span.fake-checkbox{
 		border: 1px solid white;
+		border: 1px solid var(--accent1);
 		background-color: white;
 		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 1L3 6L1 4' stroke='%2300666e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
 		
 	}
 }
+.feedback  .form-item .form-input{border-color: white;}
+.feedback .custom-checkbox input[type="checkbox"]:checked + span.fake-checkbox{border: 1px solid white;}

@@ -23,16 +23,7 @@
 		z-index: 9;
 		
 		background-color: var(--secondary4);
-		// &:before{
-		// 	content:'';
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	right: 0;
-		// 	top: 10px;
-		// 	background: var(--secondary4);
-		// 	border-top: 1px solid var(--secondary2);
-		// } 
+		
 		@media (max-width: 1279px) {
 		 position: relative;
 		 width: 100%;

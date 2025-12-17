@@ -3,7 +3,7 @@
 .acordion-wrapper .acordion-button{
 	display: flex;
 	padding: 20px;
-	
+	cursor:pointer;
 	display: flex;
 	align-items: center;
 	column-gap:16px;
@@ -14,6 +14,9 @@
 .acordion-item{
 	border: 1px solid #e1e3ef;
 	border-radius: 20px;
+	&:hover{
+		.acordion-item__title{color: var(--accent1);}
+	}
 }
 .acordion-item +.acordion-item{margin-top: 10px;}
 .acordion-wrapper .acordion-item__title{
@@ -23,6 +26,8 @@
 	font-size: 18px;
 	line-height: 140%;
 	color: var(--primary);
+	transition: .3s; 
+	
 }
 .acordion-wrapper  .acordion-item__icon{
 	width: 30px;

@@ -48,6 +48,10 @@
 	position: relative;
 	.swiper-button-prev{left: -82px;}
 	.swiper-button-next{right: -82px;}
+	@media (max-width: 1919px) {
+	.swiper-button-prev{left: 0;}
+	.swiper-button-next{right: 0;}
+	}
 	@media (max-width: 1199px) {
 		padding-bottom: 75px;
 		 .swiper-button-prev,
@@ -56,7 +60,6 @@
 			top: auto;
 			bottom: 0;
 		  }
-	 .swiper-button-prev{left: 0;}
-	 .swiper-button-next{right: 0;}
+	 
 	}
 }

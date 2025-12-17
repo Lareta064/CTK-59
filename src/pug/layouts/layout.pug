@@ -14,7 +14,9 @@ html(lang="ru")
 		//Swiper
 		link(rel="stylesheet"  href="./libs/swiper/swiper.min.css")
 		//========= fancybox ========
-		link(rel="stylesheet"  href="./libs/fancybox/fancybox.css")
+		link(rel="preload" href="./libs/fancybox/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+		noscript
+			link(rel="stylesheet" href="./libs/fancybox/fancybox.css")
 		//========= custom styles ========
 		link(rel="stylesheet"  href="./css/main.css")
 		title !{title}
@@ -42,6 +44,31 @@ html(lang="ru")
 	body(class=(bodyCl !=="" ? bodyCl : ''))
 		block content
 		
+		
+		
+		.popup-wrapper(data-role="popup-form")
+			.popup-wrapper__content
+				.popup-wrapper__header
+					.h-28 Оставить заявку
+					button.btn-close(type="button" data-close aria-label="button_close")
+						svg.svg-cross
+							use(href='./img/sprite.svg#svg-cross')
+				.popup-wrapper__body
+					form.contact-form(action="" method="method")
+						.form-item
+							input.form-input(type="text" name="user_name" placeholder="Ваше имя")
+						.form-item
+							input.form-input(type="tel"  name="phone" class="phone" inputmode="numeric"     autocomplete="tel"  placeholder="Введите номер телефона")
+						
+						.contact-form__footer
+							input.btn-primary.w-100(type="submit" value="Заказать звонок")
+							.form-agree
+								label.custom-checkbox
+									input(type="checkbox" name="agree_checkbox")
+									span.fake-checkbox
+								
+									p Принимаю #[a.link-primary(href="#!") политику конфиденциальности] и даю согласие на #[a.link-primary(href="#!") обработку персональных данных]
+							
 		
 		//Swiper
 		script(src="./libs/swiper/swiper.js")

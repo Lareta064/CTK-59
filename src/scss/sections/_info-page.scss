@@ -27,13 +27,14 @@
 	}
 	@media (max-width: 767px) {
 		grid-template-columns: 1fr;
-	    gap:10px;
+	   
 	}
 }
 .info-preview{
 	.text-wrapper-mobile{display:none}
-	@media (max-width: 1023px) {
+	@media (max-width: 767px) {
 	.text-wrapper-desktop{display:none}
 	.text-wrapper-mobile{display:block}
+	.text-wrapper >*+*{margin-top: 8px;}
 	}
 }

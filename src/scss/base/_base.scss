@@ -290,6 +290,7 @@ input::placeholder, textarea::placeholder{
 	gap:30px;
 	@media (max-width: 767px) {
 		grid-template-columns: 1fr;
+		gap:20px;
 	}
 }
 .grid-two-columns-1024{

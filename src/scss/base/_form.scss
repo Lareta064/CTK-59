@@ -24,7 +24,7 @@ textarea.form-textarea{
 .custom-checkbox{
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	gap:10px;
 	input[type="checkbox"]{
 		position: absolute;

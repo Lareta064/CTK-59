@@ -79,7 +79,7 @@
 		margin-top: 0;
 	}
 }
-.offer-card.offer-card--hover{
+*.card-hover{
 	cursor:pointer;
  &:after{
 	content:'';
@@ -87,23 +87,18 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;left: 0; right: 0;
-	background-color: rgba(255,255,255, .5);
-	background-color:rgba(0, 102, 110, .4);
-	transform: translateY(105%);
+	
+	background-color:rgba(0, 102, 110, .45);
+	opacity: 0;
 	transition: .3s; 
 	z-index: 2;
 	
  }
  .offer-card__content{z-index: 3; }
 }
-.offer-card.offer-card--hover:hover{
-	&:after{transform: translateY(0);}
-	.fs-24{text-shadow: 1px 1px var(--primary1)}
-}
-.offer-card.offer-card--grey{
-	cursor:pointer;
-	&:hover{
-		filter: grayscale(1);
-		.h-28{text-shadow: 1px 1px var(--primary1)}
-	}
+
+
+*.card-hover:hover{
+	&:after{opacity: 1;}
+	.fs-24, .h-24, .fs-28, .h-28{text-shadow: 1px 1px var(--primary1)}
 }

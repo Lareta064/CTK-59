@@ -259,8 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           });
       });
-
-      
     }
 
   //Fancybox
@@ -387,6 +385,20 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (masked !== input.value) input.value = masked;
 		});
 		});
+    const hasHide = document.querySelectorAll('.has-hide');
+    if(hasHide.length>0){
+      hasHide.forEach((block)=>{
+        const hideItems = block.querySelectorAll('.hide-item');
+        
+        const hideItemsOpen = block.querySelector('[data-more]');
+        hideItemsOpen.addEventListener('click', ()=>{
+          hideItems.forEach((el)=>{
+            el.classList.remove('hide-item');
+          })
+        });
+        
+      });
+    }
 });
 
     

@@ -4,7 +4,6 @@ mixin project-card
 		.tag #new tag
 		.tag #new tag
 		.tag #new tag
-	
 	.project-card__hotspot
 	.project-card__content
 		.project-card__title.d-flex
@@ -37,7 +36,7 @@ mixin project-card
 			a.btn-dark(href="#!") О проекте
 
 //PROJECTS
-section.projects
+section.projects.has-hide
 	.container.gap-40
 		.section-header.d-flex
 			h2.h2 Проекты
@@ -59,6 +58,18 @@ section.projects
 			//single card
 			.project-card(style="background-image: image-set(url('./img/project4.webp') 1x, url('./img/project4@2x.webp') 2x)")
 				+project-card
+			//single card
+			.project-card.hide-item(style="background-image: image-set(url('./img/project1.webp') 1x, url('./img/project1@2x.webp') 2x)")
+				+project-card
+			//single card
+			.project-card.hide-item(style="background-image: image-set(url('./img/project2.webp') 1x, url('./img/project2@2x.webp') 2x)")
+				+project-card
+			//single card
+			.project-card.hide-item(style="background-image: image-set(url('./img/project3.webp') 1x, url('./img/project3@2x.webp') 2x)")
+				+project-card
+			//single card
+			.project-card.hide-item(style="background-image: image-set(url('./img/project4.webp') 1x, url('./img/project4@2x.webp') 2x)")
+				+project-card
 		
 		.btn-center
-			button.btn-outline.xs-100(type="button") Загрузить еще
+			button.btn-outline.xs-100(type="button" data-more) Загрузить еще

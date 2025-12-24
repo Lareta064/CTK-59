@@ -382,10 +382,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 		// На всякий случай — финальный форматтер (если что-то проскочит)
-		input.addEventListener("input", () => {
-			const masked = formatPhoneFromDigits(getDigitsFromMasked(input.value));
-			if (masked !== input.value) input.value = masked;
-		});
+      input.addEventListener("input", () => {
+        const masked = formatPhoneFromDigits(getDigitsFromMasked(input.value));
+        if (masked !== input.value) input.value = masked;
+      });
 		});
 });
 

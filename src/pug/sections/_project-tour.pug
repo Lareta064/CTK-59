@@ -5,8 +5,9 @@ section.project-tour
 			h2.h2 Различные планировочные решения
 			p.fs-18 От уютных и функциональных однокомнатных до просторных трехкомнатных квартир с потрясающими видовыми характеристиками: на Московское шоссе, величественный Казбек и Столовую гору, живописных пейзажей Кавказского хребта, на динамику городской среды или приватный закрытый двор с ландшафтным озеленением от одной из ведущих московских компаний De Vision Group. 
 		.grid-column
-			.grid-column-left.br-40
+			.grid-column-left.br-40.promo-swiper-wrapper
 				.project-tour__title.h2 Фотогалерея
+				
 				//swiper slider
 				.promo-swiper.swiper.project-tour-swiper
 					.swiper-wrapper
@@ -25,12 +26,7 @@ section.project-tour
 												use(href='./img/sprite.svg#svg-screen')
 											
 									
-									.offer-card__footer
-										a.btn-primary.xs-100(href="docs.pdf" download )
-											span Презентация проекта .pdf
-											svg.svg-doc
-												use(href='./img/sprite.svg#svg-doc')
-						
+									
 						//single slide
 						.swiper-slide
 							.offer-card
@@ -44,18 +40,19 @@ section.project-tour
 										a(href="./img/gallery@2x.webp" data-fancybox="gallery").btn-screen
 											svg.svg-screen
 												use(href='./img/sprite.svg#svg-screen')
-											
-									
-									.offer-card__footer
-										a.btn-primary.xs-100(href="docs.pdf" download)
-											span Презентация проекта .pdf
-											svg.svg-doc
+								
 												use(href='./img/sprite.svg#svg-doc')
 
 					//swiper nav
 					.swiper-button-prev.promo-swiper-prev
 					.swiper-button-next.promo-swiper-next
 			
+				//button download
+				.download-button
+					a.btn-primary.xs-100(href="docs.pdf" download )
+						span Презентация проекта .pdf
+						svg.svg-doc
+							use(href='./img/sprite.svg#svg-doc')
 			
 			//right column		
 			.promo-links.grid-column-right

@@ -79,3 +79,14 @@
 	border-radius: 20px;
 	}
 }
+
+.grid-column.grid-column--gallery{
+	grid-template-columns: 1fr;
+	.offer-card{aspect-ratio: 1570/700; max-height: 700px;}
+	.promo-links.grid-column-right{display: none;}
+}
+@media(min-width:1024px){
+.grid-column.grid-column--special{
+	.promo-links > *{aspect-ratio:unset; height: 100%;}
+}
+}

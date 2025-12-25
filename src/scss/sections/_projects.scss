@@ -38,13 +38,8 @@
 
 	     @media (max-width: 1023px) {border-radius: 0 0 20px 20px;}
 	}
-		&__hotspot{
-		position: absolute;
-		left: 0; right: 0; bottom: 0;
-		height: 90px; 
-		z-index: 5;
-		background: transparent;
-	}
+	
+	
 
 	&__content{
 		position: absolute;
@@ -55,12 +50,8 @@
 		transition: transform .5s;
 		will-change: transform;
 	}
-     &__hotspot:hover{z-index:-1;}
-	&__hotspot:hover ~ &__content,
-	&__content:hover{
-		transform: translateY(0);
-        border-radius: 20px;
-	}
+    
+	
 	&__title{
 		justify-content: space-between;
 		.fs-20{margin-left: auto;}
@@ -97,16 +88,7 @@
 		padding-right: 10px;}
 		
 	}
-  
-//   .project-card__content.is-open{
-		
-// 		 transform: translateY(0);
-// 		border-radius: 40px;
-// 		.project-card__list{padding-top: 0;}
-// 		@media (max-width: 1023px) {
-// 		border-radius: 20px;
-// 		}
-// 	}
+
   @media (max-width: 1439px) {border-radius: 30px;}
   @media (max-width: 1364px) {
 	  height: 480px;
@@ -121,7 +103,7 @@
   &__hotspot{
     position: absolute;
     left: 0; right: 0; bottom: 0;
-    height: 90px;          // подбери под видимую часть контента в закрытом виде
+    height: 20px;
     z-index: 5;
     background: transparent;
   }

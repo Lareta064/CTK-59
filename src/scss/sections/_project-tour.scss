@@ -90,3 +90,25 @@
 	.promo-links > *{aspect-ratio:unset; height: 100%;}
 }
 }
+.offer-card.card-tour{
+	background-color: var(--accent1);
+	
+}
+.offer-card.card-cam{
+	background-color:rgb(0, 102, 110);
+
+}
+.offer-card.card-tour,.offer-card.card-cam{
+	transition: .3s; 
+	.offer-card__content{row-gap:10px;}
+	svg{transition: .3s; }
+	&:hover{
+		background-color:#008a95;
+		svg{
+			transform: scale(1.25);
+		}
+	}
+	@media (max-width: 1199px) {
+	.offer-card__content{.h-28{font-size: 20px;}}
+	}
+}

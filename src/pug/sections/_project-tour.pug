@@ -5,7 +5,7 @@ section.project-tour
 			h2.h2 Различные планировочные решения
 			p.fs-18 От уютных и функциональных однокомнатных до просторных трехкомнатных квартир с потрясающими видовыми характеристиками: на Московское шоссе, величественный Казбек и Столовую гору, живописных пейзажей Кавказского хребта, на динамику городской среды или приватный закрытый двор с ландшафтным озеленением от одной из ведущих московских компаний De Vision Group. 
 		
-		.grid-column.grid-column--gallery
+		.grid-column
 			.grid-column-left.br-40.promo-swiper-wrapper
 				.project-tour__title.h2 Фотогалерея
 				
@@ -58,20 +58,20 @@ section.project-tour
 			//right column		
 			.promo-links.grid-column-right
 				//single card
-				.offer-card.offer-card--center.card-hover
-					.offer-card__img
-						img.img-cover(src='./img/3d.webp', srcset='./img/3d@2x.webp 2x' width='493' height='335'  alt='img')
+				a(href="#!").offer-card.offer-card--center.card-tour
 					
 					.offer-card__content
-						.fs-24 3D тур
-						
+						.btn-round.btn-tour
+							svg.svg-tour
+								use(href='./img/sprite.svg#svg-tour')
+						.h-28 3D тур
 						
 				//single card
-				.offer-card.offer-card--center.card-hover
-					.offer-card__img
-						img.img-cover(src='./img/online.webp', srcset='./img/online@2x.webp 2x' width='493' height='335'  alt='img')
-					
+				a(href="#!").offer-card.offer-card--center.card-cam
 					.offer-card__content
-						.fs-24 Онлайн камера строительства
+						.btn-round.btn-cam
+							svg.svg-cam
+								use(href='./img/sprite.svg#svg-cam')
+						.h-28 Онлайн камера строительства
 						
 						
